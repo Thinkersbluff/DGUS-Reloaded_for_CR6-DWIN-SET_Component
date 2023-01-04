@@ -22,11 +22,15 @@ Page 0015 (Filament Screen):
  Add ability to home all
  Add ability to view or modify the current X & Y positions
 
-General (Multiple Screens):
 
+Multiple Screens:
+
+ Add Emergency Shutdown button to top right corner of every page (except for Popup menus)
  Change colour of message text from kahki to cyan
  Modify Scrolling Message text from "Keep Scrolling" to "Static" + Center Alignment.
 
+
 Update pages.cfg to add the new var_auto values
+Update vars-in.cfg to add a [t5uid1_var __M112] section
 Re-generate project bin files.
 Rebuild 32_screens.icl
