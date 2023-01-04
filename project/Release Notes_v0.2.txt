@@ -1,0 +1,32 @@
+New at this release:
+
+
+Page 0000 (Splash Screen):
+
+ Update version# on splash screen from 0.1.1 to 0.2
+
+Page 0001 (Home Screen):
+
+ Add Klipper logo and Firmware title to Home screen. (Replaces word "Home")
+
+Page 0008 (Move Screen)
+
+ Add Home xy
+ Add Steppers button
+ Add Temperatures display at bottom of screen
+ Rearrange the controls for stepping X, Y & Z
+
+Page 0015 (Filament Screen):
+
+ Add ability to home xy
+ Add ability to home all
+ Add ability to view or modify the current X & Y positions
+
+General (Multiple Screens):
+
+ Change colour of message text from kahki to cyan
+ Modify Scrolling Message text from "Keep Scrolling" to "Static" + Center Alignment.
+
+Update pages.cfg to add the new var_auto values
+Re-generate project bin files.
+Rebuild 32_screens.icl
