@@ -4,6 +4,8 @@ New at this release:
 Page 0000 (Splash Screen):
 
  Update version# on splash screen from 0.1.1 to 0.2
+ Add FIRMWARE_RESTART button
+ Add RESTART button
 
 Page 0001 (Home Screen):
 
@@ -20,7 +22,11 @@ Page 0015 (Filament Screen):
 
  Add ability to home xy
  Add ability to home all
- Add ability to view or modify the current X & Y positions
+ Add ability to view or modify the current X & Y positions 
+
+Page 0250 (Shutdown/Kill Screen):
+
+ Add FIRMWARE_RESTART button
 
 
 Multiple Screens:
@@ -31,6 +37,10 @@ Multiple Screens:
 
 
 Update pages.cfg to add the new var_auto values
-Update vars-in.cfg to add a [t5uid1_var __M112] section
+
+Update vars-in.cfg to add the [t5uid1_var __M112], [t5uid1_var __RESTART] and [t5uid1_var __FIRMWARE_RESTART] sections.
+ - Allocates the new input variable addresses 0x2FFF, 0x2FFE and 0x2FFD, respectively
+
 Re-generate project bin files.
+
 Rebuild 32_screens.icl
