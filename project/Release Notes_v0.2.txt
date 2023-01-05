@@ -10,6 +10,11 @@ Page 0000 (Splash Screen):
 Page 0001 (Home Screen):
 
  Add Klipper logo and Firmware title to Home screen. (Replaces word "Home")
+ Tapping that new logo returns to the Splash Screen. (Developer's Easter egg)
+
+Page 0003 (Print Adjust/Tune Screen)
+ Add LED ON/OFF controls
+ Nudge other controls and displays a little, to improve the layout
 
 Page 0008 (Move Screen)
 
