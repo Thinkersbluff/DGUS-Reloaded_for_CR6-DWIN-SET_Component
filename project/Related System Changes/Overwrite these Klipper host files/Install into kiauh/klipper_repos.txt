@@ -1,1 +1,1 @@
-https://github.com/Desuuuu/klipper,dgus-reloaded
+https://github.com/Thinkersbluff/dgus-reloaded_klipper,DGUS-ReloadedForCR6

@@ -3,16 +3,12 @@ This folder contains all of the files required to use the Desuuuu DGUS-Reloaded 
 
 	The DWIN_SET folder can be flashed to the display, as-is.  That will upload the TFT UI to the DWIN display.
 
-	Copy the file klipper_repos.txt to ./kiauh/ (after installing kiauh and before trying to install klipper), to enable kiauh to select the modified klipper repo as the klipper source.  Then change the klipper repo in Kiauh to the Desuuu/Klipper,dgus-reloaded option.
+	Copy the file klipper_repos.txt to ./kiauh/ (after installing kiauh and before trying to install klipper), to enable kiauh to select the modified klipper repo as the klipper source.  Then change the klipper repo in Kiauh to the  option.
 
-	Use KIAUH (https://github.com/th33xitus/kiauh) to install Klipper from the Desuuuu/Klipper repository, dgus-reloaded branch.
+	Use KIAUH (https://github.com/th33xitus/kiauh) to install Klipper from the Thinkersbluff/dgus-reloaded_klipper repository, DGUS-ReloadedForCR6 branch.
 
-AFTER installing  DGUS-reloaded Klipper, from the dgus-reloaded branch of this repo: https://github.com/Desuuuu/klipper:
-	1. Use the file pages.cfg to overwrite the file with that name in ./klipper/klippy/extras/t5uid1
-	2. Use the file pages.vars_in.cfg to overwrite the file with that name in ./klipper/klippy/extras/t5uid1
-	3. Edit the file _init_.py to define the three material presets to your taste for default PLA, ABS and PETG pre-heat temperatures
-	4. Use the edited _init_.py file to overwrite the file with that name in ./klipper/klippy/extras/t5uid1/dgus-reloaded
-	5. If you have a BTT SKR CR6 motherboard in your printer, flash (to that motherboard) the firmware.bin file located in the folder "Related System Changes\Flash this firmware.bin file if you have a BTT SKR CR6 v1.0 motherboard"
+AFTER installing  DGUS-reloaded Klipper, from the DGUS-ReloadedForCR6 branch of this repo: https://github.com/Thinkersbluff/dgus-reloaded_klipper:
+	1. If you have a BTT SKR CR6 motherboard in your printer, flash (to that motherboard) the firmware.bin file located in the folder "Related System Changes\Flash this firmware.bin file if you have a BTT SKR CR6 v1.0 motherboard"
 
 	   If you do not have a BTT SKR CR6 V1.0 motherboard:
 		Use the modified Klipper to make menuconfig and then make a new Klipper.bin file for the motherboard in your printer.
@@ -22,11 +18,11 @@ AFTER installing  DGUS-reloaded Klipper, from the dgus-reloaded branch of this r
 		- The file must always be named firmware.bin, for the BTT board
 		- The file must be named something new, each time, for the Creality boards.
 
-	Edit your Printer.cfg file, per your particular printer motherboard and Klipper configuration requirements.
+	2. Edit your Printer.cfg file, per your particular printer motherboard and Klipper configuration requirements.
 
-	Either Include t5uid1.cfg or paste the contents into printer.cfg to create a [t5uid1] section.  Edit those settings to your taste.
+	3. Either Include t5uid1.cfg or paste the contents into printer.cfg to create a [t5uid1] section.  Edit those settings to your taste.
 
-	Consider modifying your slicer of choice, to embed M117 messages in the gcode, to report current layer # vs max layer # and Time remaining.
+	4. Consider modifying your slicer of choice, to embed M117 messages in the gcode, to report current layer # vs max layer # and Time remaining on the printing status page, when printing.
 
 
 Known Issues with this version:
