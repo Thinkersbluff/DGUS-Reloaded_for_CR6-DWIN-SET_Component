@@ -48,7 +48,8 @@ Testing has been done on the following machine:
     - a PEI flexible magnetic sheet
 
 ## Prerequisites
-You have to use this [modified version of Klipper](https://github.com/Desuuuu/klipper). Make sure to enable the serial connection to the screen while configuring the MCU firmware.
+You have to use this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper). 
+Make sure to enable the serial connection to the screen while configuring the MCU firmware.
 
 The only modification required to your Klipper printer.cfg file is to add this section:
 ```
