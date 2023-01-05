@@ -8,7 +8,10 @@ This folder contains all of the files required to use the Desuuuu DGUS-Reloaded 
 	Use KIAUH (https://github.com/th33xitus/kiauh) to install Klipper from the Thinkersbluff/dgus-reloaded_klipper repository, DGUS-ReloadedForCR6 branch.
 
 AFTER installing  DGUS-reloaded Klipper, from the DGUS-ReloadedForCR6 branch of this repo: https://github.com/Thinkersbluff/dgus-reloaded_klipper:
-	1. If you have a BTT SKR CR6 motherboard in your printer, flash (to that motherboard) the firmware.bin file located in the folder "Related System Changes\Flash this firmware.bin file if you have a BTT SKR CR6 v1.0 motherboard"
+
+	1. Install the STABLE_Z_HOME extension, per the instructions at https://github.com/matthewlloyd/Klipper-Stable-Z-Home
+
+	2. If you have a BTT SKR CR6 motherboard in your printer, flash (to that motherboard) the firmware.bin file located in the folder "Related System Changes\Flash this firmware.bin file if you have a BTT SKR CR6 v1.0 motherboard"
 
 	   If you do not have a BTT SKR CR6 V1.0 motherboard:
 		Use the modified Klipper to make menuconfig and then make a new Klipper.bin file for the motherboard in your printer.
@@ -18,11 +21,11 @@ AFTER installing  DGUS-reloaded Klipper, from the DGUS-ReloadedForCR6 branch of 
 		- The file must always be named firmware.bin, for the BTT board
 		- The file must be named something new, each time, for the Creality boards.
 
-	2. Edit your Printer.cfg file, per your particular printer motherboard and Klipper configuration requirements.
+	3. Edit your Printer.cfg file, per your particular printer motherboard and Klipper configuration requirements.
 
-	3. Either Include t5uid1.cfg or paste the contents into printer.cfg to create a [t5uid1] section.  Edit those settings to your taste.
+	4. Either Include t5uid1.cfg or paste the contents into printer.cfg to create a [t5uid1] section.  Edit those settings to your taste.
 
-	4. Consider modifying your slicer of choice, to embed M117 messages in the gcode, to report current layer # vs max layer # and Time remaining on the printing status page, when printing.
+	5. Consider modifying your slicer of choice, to embed M117 messages in the gcode, to report current layer # vs max layer # and Time remaining on the printing status page, when printing.
 
 
 Known Issues with this version:
