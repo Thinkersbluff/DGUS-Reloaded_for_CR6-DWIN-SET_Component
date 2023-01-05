@@ -1,5 +1,5 @@
 
-# DGUS-reloaded-Klipper - ported to run on Creality CR6-SE and CR6-MAX printers
+# DGUS-reloaded-Klipper - a DWIN_SET UI Integrated with Klipper and ported to run on Creality CR6-SE and CR6-MAX printers
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
