@@ -7,11 +7,7 @@ It was refactored and extended from the T5UID1 DGUS-reloaded firmware by Desuuuu
 
 I used the [DGUSTool V8.2.1.14](https://github.com/CR6Community/CR-6-touchscreen/blob/extui/Tools/DGUS_Tool_V8.2.1.14.7z), to create a new DWIN_SET project in portrait-mode, based on version 1.0.2 of the landscape-mode project by Desuuuu.
 
-In the course of the refactoring process, I have:
-1. Rearranged and redesigned some of the screens, to suit my own preferences for 3D-printing workflow with the Creality CR6-SE printer.  
-2. Renamed some of the buttons and labels, to use the terms used in the CR6Community Firmware UI, with the idea of (hopefully) reducing the learning barrier for CR6Community members wanting to use this Klipper interface.
-3. Removed a few controls/displays that were not working as intended and which my limited python skills did not enable me to troubleshoot and fix.
-4. Made a few small edits to a couple of the files in the DGUS-reloaded modified version of Klipper with which this DWIN_SET must be paired.
+At release 0.3, I refactored the UI completely, to closely resemble the CF6.1 Community Firmware in look, feel, terminology, and workflow logic.
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -24,9 +20,7 @@ Features present in this version of the UI include:
 * Status message available on most screens
 * Z offset, manual and automatic leveling
 * PID autotuning for Nozzle and for Bed
-* Beeper Volume adjustment
 * Display Brightness adjustment
-* Playing sounds with the Beeper, using M300 (the frequency parameter is the index of the audio file)
 - A printing status page, with a Tuning menu and Pause/Resume/Cancel print controls 
 
 ## How to Contribute
@@ -48,7 +42,7 @@ Testing has been done on the following machine:
     - a PEI flexible magnetic sheet
 
 ## Prerequisites
-You have to use this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper). 
+You must use release 1.2.1 of this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper). 
 Make sure to enable the serial connection to the screen while configuring the MCU firmware.
 
 The only modification required to your Klipper printer.cfg file is to add this section:
@@ -67,7 +61,8 @@ Example Klipper configurations are available in [the Desuuuu/DGUS-reloaded-Klipp
 * [Print progress display](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-progress-display)
 
 ## Modification / Compilation
-You can make modifications to the firmware by opening the `DWprj.hmi` file in **DGUS Tools**.
+You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  Two versions of that tool, documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
+
 You can edit the graphics using a simple bitmap editing tool, like Windows PAINT.
 
 After finishing your modifications, you will need to press the *Generate* command from the DGUSTool File menu to update the 3 required binary files (13TouchFile.bin, 14ShowFile.bin and 22_Config.bin) in the DWIN_SET folder.
