@@ -1,0 +1,53 @@
+New at this release:
+
+Page 0000 (Splash Screen):
+
+ Update version# on splash screen from 0.3 to 0.3.1
+
+Page 0001 (Home Screen):
+
+Update v0.3-BETA tag to v0.3.1
+
+Page 0002 (Printing Screen)
+Restored functions of Pause Print and Stop Print.
+
+Printing Time function to be in a future release.
+
+Page 005 (Manage Heaters Screen)
+ Considering adding PID menu button in future release.
+
+Page 0009 (Calibrate Menu Screen)
+ No E-Steps function in this UI.  May add at future release.
+ 
+  NOTE: Still need to review the Klipper code for this Offset function.  Can not tell whether it loads the calibrated Z offset value from Printer.cfg.  Would prefer to implement the Klipper Calibrate_Offset/Test/Save_Config approach, in a future release...
+
+Page 0011 (Paused Print Screen)
+
+ Transparent to user and now enabled at this release. Needed this to solve the problem of how to return from TUNE to one of two screens, depending on whether the printer was being Tuned from a printing state or from a paused state.
+
+Page 0013 (Automatic Leveling Screen)
+
+Would like to reduce this mesh to a 4x4 matrix or perhaps a variable-sized mesh based on the printer.cfg mesh settings, in a future release.
+
+Page 0018 (Settings menu2)
+
+ Removed Volume controls.  
+ Turns out those are designed to control the volume of music (WAE) file playback through a speaker, but the CR6 DWIN display only has a buzzer and does not play music.
+
+Re-generate project bin files.
+
+Rebuild 32_screens.icl.
+
+
+Known Issues at this release:
+
+- Z Offset function may not be working correctly. Needs further study.
+- Printer still shutting down on "unmanaged exception" on the first HomeX and HomeY events after power-up.
+ - No Print functions implemented (yet)
+ - Elapsed print time variable not working (suppressed until fixed)
+ - Material presets popup implementation not elegant. Needs refining.
+ - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up. THey do work after a FIRMWARE RESET from the Mainsail Web client.
+
+NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
+
+Cheers!
