@@ -1,13 +1,11 @@
 
-# DGUS-reloaded-Klipper - a DWIN_SET UI Integrated with Klipper and ported to run on Creality CR6-SE and CR6-MAX printers
+# DGUS-reloaded, CR6 Community Edition
 
-This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
+This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
-It was refactored and extended from the T5UID1 DGUS-reloaded firmware by Desuuuu which is available from [this repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper).
+Initially refactored and extended from the T5UID1 DGUS-reloaded firmware by Desuuuu which is available from [this repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper).  
 
-I used the [DGUSTool V8.2.1.14](https://github.com/CR6Community/CR-6-touchscreen/blob/extui/Tools/DGUS_Tool_V8.2.1.14.7z), to create a new DWIN_SET project in portrait-mode, based on version 1.0.2 of the landscape-mode project by Desuuuu.
-
-At release 0.3, I refactored the UI completely, to closely resemble the CF6.1 Community Firmware in look, feel, terminology, and workflow logic.
+At release 0.3, completely refactored again, to closely resemble the CF6.1 Community Firmware in look, feel, terminology, and workflow logic.
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -23,7 +21,7 @@ Features present in this version of the UI include:
 * Display Brightness adjustment
 - A printing status page, with a Tuning menu and Pause/Resume/Cancel print controls 
 
-## How to Contribute
+## How to Contributr
 
 CR6Community Firmware features NOT present in this release may be developed in future releases, but no schedule commitment is possible for such extensions.  Users who are able to define and develop such modifications are welcome to fork this repository and to submit Pull Requests or to open Discussions or Issues as appropriate, to propose those changes.
 
@@ -33,7 +31,7 @@ This firmware is intended to work on any CR6-SE or CR6-MAX, regardless of whethe
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer.
 **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works if you configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
-Testing has been done on the following machine:
+Testing is done on the following machine:
 
 * Creality CR6-SE, modified with:
     - a BTT SKR CR6 v1.0 motherboard
@@ -42,16 +40,19 @@ Testing has been done on the following machine:
     - a PEI flexible magnetic sheet
 
 ## Prerequisites
-You must use release 1.2.1 of this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper). 
-Make sure to enable the serial connection to the screen while configuring the MCU firmware.
+For this DWIN_SET to work with your printer, you must also:
+- install this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
+- use Make Menuconfig, Make to build a custom Klipper.bin file for flashing to your motherboard
+  (Make sure to enable the serial connection to the screen while using Menuconfig to configure the MCU firmware.)
 
-The only modification required to your Klipper printer.cfg file is to add this section:
-```
+Each new version of this UI and of the modified Klipper is always released as a matched pair. Each points to the other, in the release notes.
+
+To enable the UART interface between the display and motherboard (MCU), you must at least add this section to your printer.cfg:
+
 [t5uid1]
 firmware: dgus_reloaded
-```
-The full recommended [t5uid1] section is included with the project, as t5uid1.cfg.
-For a complete list of all available options, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
+
+For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
 
 Example Klipper configurations are available in [the Desuuuu/DGUS-reloaded-Klipper-config repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper-config).
 
@@ -60,7 +61,7 @@ Example Klipper configurations are available in [the Desuuuu/DGUS-reloaded-Klipp
 * [Print status](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-status)
 * [Print progress display](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-progress-display)
 
-## Modification / Compilation
+## How to Customize the UI Look and Feel
 You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  Two versions of that tool, documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
 
 You can edit the graphics using a simple bitmap editing tool, like Windows PAINT.
@@ -69,6 +70,9 @@ After finishing your modifications, you will need to press the *Generate* comman
 If you modified any of the screen layouts, icons or buttons, you will also need to use the ICL tool to regenerate the applicable ICL file(s) (intuitively named: 24_icons.icl, 27_buttons.icl, 32_screens.icl, 30_progress_left.icl and 37_progress_right.icl).
 
 You can then flash your touchscreen using the resulting `DWIN_SET` folder.
+
+## Functional Changes Also Require Edits To Modified Klipper Files
+Please note, that to actually add/delete/modify functionality, you will also need to make the necessary changes to the applicable modified Klipper files.
 
 If you add any data variable display widgets to any of the screens, you also need to edit the DGUS-reloaded Klipper file pages.cfg in ~/klipper/klippy/extras/t5uid1/dgus-reloaded, so that the data will be refreshed and maintained when that screen is being displayed.
 I have included that modified file for this distribution, for you to overwrite the stock (Desuuuu) pages.cfg when you install this CR6 version of the UI.
