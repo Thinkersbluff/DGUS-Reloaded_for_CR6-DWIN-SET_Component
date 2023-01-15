@@ -1,11 +1,11 @@
 
-# DGUS-reloaded for Klipper UI, CR6 Community Edition
+# DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
 Initially refactored and extended from the T5UID1 DGUS-reloaded firmware by Desuuuu which is available from [this repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper).  
 
-At release 0.3, completely refactored again, to closely resemble the CF6.1 Community Firmware in look, feel, terminology, and workflow logic.
+At release 0.3, completely refactored again, to closely resemble the [CF6.1 Community Firmware](https://github.com/CR6Community/CR-6-touchscreen) in look, feel, terminology, and workflow logic.
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -21,7 +21,7 @@ Features present in this version of the UI include:
 * Display Brightness adjustment
 - A printing status page, with a Tuning menu and Pause/Resume/Cancel print controls 
 
-## How to Contributr
+## How to Contribute
 
 CR6Community Firmware features NOT present in this release may be developed in future releases, but no schedule commitment is possible for such extensions.  Users who are able to define and develop such modifications are welcome to fork this repository and to submit Pull Requests or to open Discussions or Issues as appropriate, to propose those changes.
 
@@ -34,9 +34,10 @@ This firmware **should** be compatible with any configuration of CR6-SE or CR6-M
 Testing is done on the following machine:
 
 * Creality CR6-SE, modified with:
-    - a BTT SKR CR6 v1.0 motherboard
-    - a direct drive Orbiter v1.5 extruder
+    - a Creality ERA 1.1.0.3 motherboard
+    - a direct drive Orbiter v1.5 extruder with Moons pancake motor
     - a Dragon HF hotend
+    - a 0.9 deg Y axis motor
     - a PEI flexible magnetic sheet
 
 ## Prerequisites
