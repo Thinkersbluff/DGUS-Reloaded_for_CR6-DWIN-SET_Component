@@ -1,5 +1,5 @@
 
-# DGUS-reloaded, CR6 Community Edition
+# DGUS-reloaded for Klipper UI, CR6 Community Edition
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
