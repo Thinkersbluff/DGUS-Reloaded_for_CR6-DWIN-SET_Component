@@ -1,5 +1,9 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
+![image](https://user-images.githubusercontent.com/36551518/212971698-2d6c0c36-32ec-4d9f-aa5d-3232401490b2.png)
+![image](https://user-images.githubusercontent.com/36551518/212972182-ae2ac437-5109-46d0-84c9-205b93728757.png)
+![Leveling](https://user-images.githubusercontent.com/36551518/212973797-90dc72f5-55bc-4af7-a1ff-85717db1998c.png)
+![ALeveling](https://user-images.githubusercontent.com/36551518/212974618-f33749a1-f7f4-46d1-890c-aced45110d1e.png)
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
@@ -7,29 +11,30 @@ Initially refactored and extended from the T5UID1 DGUS-reloaded firmware by Desu
 
 At release 0.3, completely refactored again, to closely resemble the [CF6.1 Community Firmware](https://github.com/CR6Community/CR-6-touchscreen) in look, feel, terminology, and workflow logic.
 
+
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
 
 ## Features
-
 This firmware was inspired by the CR6Community Firmware touchscreen firmware, but it is NOT as feature-rich as the CR6Community Firmware. 
 
 Features present in this version of the UI include:
-* Status message available on most screens
-* Z offset, manual and automatic leveling
-* PID autotuning for Nozzle and for Bed
-* Display Brightness adjustment
-- A printing status page, with a Tuning menu and Pause/Resume/Cancel print controls 
+* Support for _most_ workflows best performed standing at the printer 
+* Emergency Stop (M112) button on every screen
+* Ability to Tune some printer settings during a print
+* PID autotuning for both Nozzle and for Bed, with SAVE_CONFIG option
+* Pre-defined Material heat settings for PLA, PETG and ABS
+* Screen Display Brightness adjustment
+* Pause/Resume/Cancel print controls 
+* Support for M73 message display during printing
+* SET_GCODE_OFFSET Z for current print session
+* Support for manual leveling, for those who have retrofit bed wheels
+* Run ABL with option to SAVE_CONFIG (default) Profile
 
-## How to Contribute
-
-CR6Community Firmware features NOT present in this release may be developed in future releases, but no schedule commitment is possible for such extensions.  Users who are able to define and develop such modifications are welcome to fork this repository and to submit Pull Requests or to open Discussions or Issues as appropriate, to propose those changes.
+>> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
-This firmware is intended to work on any CR6-SE or CR6-MAX, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
-
-This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer.
-**CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works if you configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
+This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
 
 Testing is done on the following machine:
 
@@ -44,23 +49,15 @@ Testing is done on the following machine:
 For this DWIN_SET to work with your printer, you must also:
 - install this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
 - use Make Menuconfig, Make to build a custom Klipper.bin file for flashing to your motherboard
-  (Make sure to enable the serial connection to the screen while using Menuconfig to configure the MCU firmware.)
+  OR flash the applicable pre-compiled Klipper.bin file provided for you in the other repo.
+- Configure printer.cfg to:
+  1. define the bed mesh as 5x5
+  2. add a section [t5uid1] with at least the line "firmware: dgus_reloaded", like this:
+ 
+     [t5uid1]  
+     firmware: dgus_reloaded
 
-Each new version of this UI and of the modified Klipper is always released as a matched pair. Each points to the other, in the release notes.
-
-To enable the UART interface between the display and motherboard (MCU), you must at least add this section to your printer.cfg:
-
-[t5uid1]
-firmware: dgus_reloaded
-
-For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
-
-Example Klipper configurations are available in [the Desuuuu/DGUS-reloaded-Klipper-config repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper-config).
-
-## Additional help is available in the Desuuuu/DGUS-reloaded-Klipper-config Wiki
-* [Flashing the firmware](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Flashing-the-firmware)
-* [Print status](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-status)
-* [Print progress display](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-progress-display)
+**NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
 
 ## How to Customize the UI Look and Feel
 You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  Two versions of that tool, documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
@@ -80,6 +77,15 @@ I have included that modified file for this distribution, for you to overwrite t
 
 If you wish to modify the nozzle and bed temperature presets for PLA, ABS and/or PETG, you will need to modify the file _init_.py in the folder ~/klipper/klippy/extras/t5uid1/dgus-reloaded, so that the program will initialize those variables with the values of your choosing.
 I have included that modified file for this distribution, for you to overwrite the stock (Desuuuu) _init_.py when you install this CR6 version of the UI. (CAUTION: There is more than one file named  _init_.py in the t5uid1 application. Be sure you are in the right directory when overwriting the stock one with the modified one.)
+
+## Additional background info is available in the Desuuuu/DGUS-reloaded-Klipper-config Wiki
+* [Flashing the firmware](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Flashing-the-firmware)
+* [Print status](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-status)
+* [Print progress display](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Print-progress-display)
+
+## How to Contribute
+
+CR6Community Firmware features NOT present in this release may be developed in future releases, but no schedule commitment is possible for such extensions.  Users who are able to define and develop such modifications are welcome to fork this repository and to submit Pull Requests or to open Discussions or Issues as appropriate, to propose those changes.
 
 ## Credits
 | Material                                                                       | Author                                                    | Modified | License                                                               |
