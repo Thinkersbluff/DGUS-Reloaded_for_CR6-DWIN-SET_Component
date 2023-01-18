@@ -1,0 +1,28 @@
+New at release 0.3.3 - Beta:
+
+
+Page 0000 (Boot Screen):
+
+ Updated version# on Boot screen from 0.3.2 to 0.3.3
+
+Page 0001 (Home Screen):
+
+Updated version# on Home screen from 0.3.2 to 0.3.3
+
+Page 0003 (Print Tune Screen) + 0012 (Print Paused Screen) + 0018 (Miscellaneous Settings Screen)
+
+Replaced On/Off buttons with single toggle button for LED, which now also shows current commanded state of LED.
+
+Re-generated project bin files 13, 14, 22.
+
+Rebuilt 32_screens.icl and 27_buttons.icl.
+
+Known Issues at this release:
+
+ - No Print Menu functions implemented (yet)
+ - Elapsed print time variable not working (suppressed until fixed)
+ - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.          They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+
+NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
+
+Cheers!
