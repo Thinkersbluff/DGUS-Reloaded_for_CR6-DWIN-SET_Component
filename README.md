@@ -73,10 +73,8 @@ You can then flash your touchscreen using the resulting `DWIN_SET` folder.
 Please note, that to actually add/delete/modify functionality, you will also need to make the necessary changes to the applicable modified Klipper files.
 
 If you add any data variable display widgets to any of the screens, you also need to edit the DGUS-reloaded Klipper file pages.cfg in ~/klipper/klippy/extras/t5uid1/dgus-reloaded, so that the data will be refreshed and maintained when that screen is being displayed.
-I have included that modified file for this distribution, for you to overwrite the stock (Desuuuu) pages.cfg when you install this CR6 version of the UI.
 
 If you wish to modify the nozzle and bed temperature presets for PLA, ABS and/or PETG, you will need to modify the file _init_.py in the folder ~/klipper/klippy/extras/t5uid1/dgus-reloaded, so that the program will initialize those variables with the values of your choosing.
-I have included that modified file for this distribution, for you to overwrite the stock (Desuuuu) _init_.py when you install this CR6 version of the UI. (CAUTION: There is more than one file named  _init_.py in the t5uid1 application. Be sure you are in the right directory when overwriting the stock one with the modified one.)
 
 ## Additional background info is available in the Desuuuu/DGUS-reloaded-Klipper-config Wiki
 * [Flashing the firmware](https://github.com/Desuuuu/DGUS-reloaded-Klipper/wiki/Flashing-the-firmware)
