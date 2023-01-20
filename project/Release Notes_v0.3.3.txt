@@ -1,27 +1,40 @@
 New at release 0.3.3 - Beta:
 
 
-Page 0000 (Boot Screen):
+Page 000 (Boot Screen) + Page 001 (Home Screen):
 
- Updated version# on Boot screen from 0.3.2 to 0.3.3
+	Updated version# on Boot screen from 0.3.2 to 0.3.3
 
-Page 0001 (Home Screen):
 
-Updated version# on Home screen from 0.3.2 to 0.3.3
+Page 003 (Print Tune Screen) + 012 (Print Paused Screen) + 018 (Miscellaneous Settings Screen)
 
-Page 0003 (Print Tune Screen) + 0012 (Print Paused Screen) + 0018 (Miscellaneous Settings Screen)
+	Replaced On/Off buttons with single toggle button for LED, which now also shows current commanded state of LED.
 
-Replaced On/Off buttons with single toggle button for LED, which now also shows current commanded state of LED.
+
+Page 002 (Print Status Screen) + 007 (Print Paused Screen) + 004 (Print Finished Screen)
+
+	Print Progress Bar shortened to fit portrait mode screen.
+
+
+General Cleanup:
+
+	Changed font and increased font size to reduce aliasing of text and data displays
+
+	Cleaned-up backgrounds to remove cut & paste artifacts.
+
 
 Re-generated project bin files 13, 14, 22.
 
-Rebuilt 32_screens.icl and 27_buttons.icl.
+Rebuilt 32_screens.icl, 30_progress_bar_left, 37_progress_bar_right and 27_buttons.icl.
 
 Known Issues at this release:
 
  - No Print Menu functions implemented (yet)
  - Elapsed print time variable not working (suppressed until fixed)
  - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.          They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+ - Using PAUSE or CANCEL while printing may cause "strange" behaviours (modified the Klipper side to add M400 to those scripts, hoping to resolve that.  Sometimes see "move out of range" errors in the Mainsail Console, suggesting that commands which should be in absolute coordinates may sometimes be executed in relative mode, during  CANCEL_PRINT, if not already paused)
+  - CANCEL_PRINT leaves Klipper/MainSail thinking that the printer is still printing.  Can not start a new print from the CANCELLED state.  (May be a Klipper bug fixed at a later revision?)
+
 
 NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
 
