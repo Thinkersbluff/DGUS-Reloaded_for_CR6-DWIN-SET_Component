@@ -14,13 +14,28 @@ Page 003 (Print Tune Screen) + 012 (Print Paused Screen) + 018 (Miscellaneous Se
 Page 002 (Print Status Screen) + 007 (Print Paused Screen) + 004 (Print Finished Screen)
 
 	Print Progress Bar shortened to fit portrait mode screen.
+	Added Elapsed Print Time display.
+	Added (printing) Filename display.
 
 
 General Cleanup:
 
-	Changed font and increased font size to reduce aliasing of text and data displays
+	Changed font to B612 Monospaced Google Font
+		Increased font size to 12pt
+		Raised font to stop the clipping of the descenders
 
 	Cleaned-up backgrounds to remove cut & paste artifacts.
+
+	Moved scrolling message bar to same height on all screens.
+
+	Standardized all screen titles to 12pt font
+
+New "Hidden" control features: 
+
+	Tap the target temperature values on any screen, to popup a keyboard and modify the values.
+	Tap the heater icon on any screen, to turn off that heater.
+	Tap the Klipper Icon on the Home screen, to return to the Boot screen (gives access to "Restart" and "Firmware Restart")
+	Tap the version number on the Home screen, to switch to the "System Information" screen. (Nothing particularly useful there, yet.)
 
 
 Re-generated project bin files 13, 14, 22.
@@ -30,10 +45,13 @@ Rebuilt 32_screens.icl, 30_progress_bar_left, 37_progress_bar_right and 27_butto
 Known Issues at this release:
 
  - No Print Menu functions implemented (yet)
- - Elapsed print time variable not working (suppressed until fixed)
- - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.          They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
- - Using PAUSE or CANCEL while printing may cause "strange" behaviours (modified the Klipper side to add M400 to those scripts, hoping to resolve that.  Sometimes see "move out of range" errors in the Mainsail Console, suggesting that commands which should be in absolute coordinates may sometimes be executed in relative mode, during  CANCEL_PRINT, if not already paused)
-  - CANCEL_PRINT leaves Klipper/MainSail thinking that the printer is still printing.  Can not start a new print from the CANCELLED state.  (May be a Klipper bug fixed at a later revision?)
+ - Elapsed print time variable stops counting, while print is paused (by design)
+ - Elapsed print time variable includes "time paused" in the total duration (Using total_duration until find bug in the print_duration code.) 
+ - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.
+      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+ - Using PAUSE or CANCEL while printing may cause "strange" behaviours. 
+	e.g.: - Sometimes see "move out of range" errors in the Mainsail Console, suggesting that commands which should be in absolute coordinates may sometimes be executed in relative mode, during  CANCEL_PRINT.  That error in-turn also triggers CANCEL_PRINT, so Klipper also throws a "CANCEL_PRINT macro called recursively" error.  
+  		- CANCEL_PRINT consistently leaves Klipper/MainSail thinking that the printer is still printing.  Can not start a new print from the CANCELLED state.  (May be a Klipper bug fixed at a later revision?)  EMERGENCY_STOP usually resets the system.  If not, then ReBoot or cycle power.
 
 
 NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
