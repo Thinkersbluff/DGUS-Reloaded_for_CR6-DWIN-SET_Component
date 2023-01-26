@@ -30,6 +30,8 @@ Features present in this version of the UI include:
 * SET_GCODE_OFFSET Z for current print session
 * Support for manual leveling, for those who have retrofit bed wheels
 * Run ABL with option to SAVE_CONFIG (default) Profile
+* Display name of file currently being printed
+* Display elapsed time since starting current print
 
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
