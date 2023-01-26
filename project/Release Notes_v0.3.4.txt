@@ -1,0 +1,31 @@
+New at release 0.3.4 - Beta:
+
+Bugfixes:
+
+The following issues are fixed at this release:
+Issue#12: v0.3.3 - Resume button popup menu is for Pause, not for Resume 
+Issue#13: v0.3.3 - The contents of scrolling Text fields are not aligning left, correctly (the first few characters are missing)
+
+Known Issues at this release:
+
+ - The FONT (.HZK) file changed at release v0.3.3.
+	- It is included in the DWIN_SET folder and will slow the flashing process
+	- After flashing it once to the display, that file can be removed from DWIN_SET
+
+ - No Print Menu functions have been implemented (yet)
+
+ - Elapsed print time variable stops counting, while print is paused (by design)
+ - Elapsed print time variable includes "time paused" in the total duration (Using total_duration until find bug in the print_duration code.) 
+
+ - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.
+      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+
+ - Using PAUSE or CANCEL while printing can cause "strange" behaviours on the Test Printer. 
+	e.g.: - I sometimes see a "move out of range" error in the Mainsail Console, suggesting that the printer may be changing from relative to absolute mode before the print buffer is cleared, during  CANCEL_PRINT.  That error in-turn also triggers CANCEL_PRINT, so Klipper also throws a "CANCEL_PRINT macro called recursively" error.  
+  		- CANCEL_PRINT consistently leaves Klipper/MainSail thinking that the printer is still printing.  I can not start a new print from the CANCELLED state.  (May be a Klipper bug fixed at a future revision?)  EMERGENCY_STOP usually resets my system.  If not, then I Restart Klipper or ReBoot the Host or cycle power on the Printer.
+
+
+
+NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
+
+Cheers!
