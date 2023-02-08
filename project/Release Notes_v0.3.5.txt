@@ -1,0 +1,35 @@
+New at release 0.3.5 - Beta:
+
+New Features:
+  - Added the ability to Change Filament while Paused (See revised TUNE screen, now named "Tune While Paused")
+  - Made all of the M117 Message display bars static, left-justified. (Found the constant scrolling annoying...)
+  - Converted the timer icon on Printing pages into an animation that shows progress from 0-100%.
+	- Preparing to remove the progress bar if this animation is "good enough", to make room for future additions to the page.
+
+Bugfixes:
+
+The following issues are fixed at this release:
+ -  Using PAUSE or CANCEL while printing can cause "strange" behaviours on the Test Printer
+	- Klipper component modified at 0.7.3, to call PAUSE before calling CANCEL_PRINT.
+ -  Fixed an error introduced at Klipper Component v1.2.2 (See Closed Issue #19)
+
+Known Issues at this release:
+
+ - The FONT (.HZK) file changed at release v0.3.3.
+	- If it is included in the DWIN_SET folder, it will slow the flashing process
+	- That file is now in the "One-Time DWIN_SET files" folder
+	- If you have not flashed it to your system before, you should copy that to DWIN_SET for one time
+	- After flashing it once to the display, that file can again be removed from DWIN_SET
+
+ - No Print Menu functions have been implemented (yet)
+
+ - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.
+      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+
+ - CANCEL_PRINT consistently leaves Klipper/MainSail thinking that the printer is still printing.  I can not start a new print from the CANCELLED state.  (May be a Klipper bug? May be a Mainsail bug?)  EMERGENCY_STOP usually resets my system.  If not, then I Restart Klipper or ReBoot the Host or cycle power on the Printer.
+
+
+
+NOTE: I could use a bit of help to analyse and modify the Python bits of the Klipper side.  Please join me in the Discussions section, if you think you can help.  
+
+Cheers!
