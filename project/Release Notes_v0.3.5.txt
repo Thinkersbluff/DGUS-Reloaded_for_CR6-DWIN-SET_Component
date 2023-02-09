@@ -1,3 +1,5 @@
+Last updated: 8 Feb 2023
+
 New at release 0.3.5 - Beta:
 
 New Features:
@@ -8,18 +10,19 @@ New Features:
 
 Bugfixes:
 
-The following issues are fixed at this release:
+The following issues are fixed  this release:
  -  Using PAUSE or CANCEL while printing can cause "strange" behaviours on the Test Printer
-	- Klipper component modified at 0.7.3, to call PAUSE before calling CANCEL_PRINT.
+	- Klipper component modified at 1.2.4, to call PAUSE before calling CANCEL_PRINT.
  -  Fixed an error introduced at Klipper Component v1.2.2 (See Closed Issue #19)
 
 Known Issues at this release:
 
  - The FONT (.HZK) file changed at release v0.3.3.
-	- If it is included in the DWIN_SET folder, it will slow the flashing process
+	- When it is included in the DWIN_SET folder, it slows the flashing process
 	- That file is now in the "One-Time DWIN_SET files" folder
 	- If you have not flashed it to your system before, you should copy that to DWIN_SET for one time
 	- After flashing it once to the display, that file can again be removed from DWIN_SET
+	- If you already flashed that file to your display when flashing 1.2.2, you do NOT need to flash it again.
 
  - No Print Menu functions have been implemented (yet)
 
