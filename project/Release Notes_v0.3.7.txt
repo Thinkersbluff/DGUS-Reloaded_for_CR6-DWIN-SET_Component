@@ -1,16 +1,15 @@
-Last updated: 20 Mar 2023
+Last updated: 28 Apr 2023
 
-New at release 0.3.6 - Beta:
+New at release 0.3.7 - Beta:
 
 New Features:
-  - Re-coloured the timer icon on Printing pages to match the default Mainsail theme.
-	- Preparing to remove the progress bar if this animation is "good enough", to make room for future additions to the page.
+  - Removed redundant Print Progress Bar
+  - Moved the message bar to where the Progress Bar was, to consolidate the print time info on the screen
+  - Added Home All and Disable Steppers buttons to the ABL Automatic screen, to support staying on that screen while iteratively adjusting the bed plate screws, when leveling silicone spacers using the bed mesh.
 
 Bugfixes:
 
-The following issues are fixed  this release:
-  - Re-compiled this DWIN_SET using DGUSTool V8.2.1.14, so that it runs on all versions of DGUS2. Discovered that 0.3.5 ran only on DGUS2 v3.5.
-
+    None
 
 Known Issues at this release:
 
