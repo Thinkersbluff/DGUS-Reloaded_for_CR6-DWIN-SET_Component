@@ -5,6 +5,3 @@ WARNING: IF you decide to flash back to the Marlin CR6 Community Firmware, you W
 
 The HZK file (Font 0 database) is compatible with either the Klipper or the Marlin CR6Community Firmware.
 
-   Always flash the most recent .HZK file
-   Strip everything after K, to rename the file before flashing it.
-
