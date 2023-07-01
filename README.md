@@ -49,15 +49,16 @@ Testing is done on the following machine:
 
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
-- install this [modified version of Klipper](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
-- use Make Menuconfig, Make to build a custom Klipper.bin file for flashing to your motherboard
-  OR flash the applicable pre-compiled Klipper.bin file provided for you in the other repo.
+- install this [customized version of Klipper, per the installation guidelines](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
+- Flash the applicable pre-compiled Klipper.bin file provided for you in the other repo.
 - Configure printer.cfg to:
   1. define the bed mesh as 5x5
   2. add a section [t5uid1] with at least the line "firmware: dgus_reloaded", like this:
  
      [t5uid1]  
      firmware: dgus_reloaded
+  3. ensure that the START_PRINT macro includes the command "DGUS_PRINT_START" and that the END_PRINT macro includes the command "DGUS_PRINT_END", per the examples in the CR6.cfg file provided.
+  4. modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the Cura example provided with the Klipper component) 
 
 **NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
 
