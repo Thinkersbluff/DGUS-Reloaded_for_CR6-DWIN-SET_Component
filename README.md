@@ -52,15 +52,16 @@ For this DWIN_SET to work with your printer, you must also:
 - install this [customized version of Klipper, per the installation guidelines](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
 - Flash the applicable pre-compiled Klipper.bin file provided for you in the other repo.
 - Configure printer.cfg to:
-  1. define the bed mesh as 5x5
+  1. define the bed mesh as 5x5  
   2. add a section [t5uid1] with at least the line "firmware: dgus_reloaded", like this:
  
      [t5uid1]  
      firmware: dgus_reloaded
-  3. ensure that the START_PRINT macro includes the command "DGUS_PRINT_START" and that the END_PRINT macro includes the command "DGUS_PRINT_END", per the examples in the CR6.cfg file provided.
-  4. modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the Cura example provided with the Klipper component) 
+     
+     **NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
+- Ensure that the START_PRINT macro includes the command "DGUS_PRINT_START" and that the END_PRINT macro includes the command "DGUS_PRINT_END", per the examples in the CR6.cfg file provided.  
+- Modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the [Cura example provided with the Klipper component](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-Klipper_Component/blob/DGUS-ReloadedForCR6/Related%20Changes/Add%20these%20Cura%20Post-Processing%20Scripts.bmp)) 
 
-**NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
 
 ## How to Customize the UI Look and Feel
 You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  Two versions of that tool, documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
