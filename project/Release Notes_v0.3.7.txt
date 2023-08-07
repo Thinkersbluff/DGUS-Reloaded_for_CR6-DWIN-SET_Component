@@ -1,15 +1,13 @@
-Last updated: 28 Apr 2023
+Last updated: 7 Aug 2023
 
-New at release 0.3.7 - Beta:
+New at release 0.3.8 - Beta:
 
 New Features:
-  - Removed redundant Print Progress Bar
-  - Moved the message bar to where the Progress Bar was, to consolidate the print time info on the screen
-  - Added Home All and Disable Steppers buttons to the ABL Automatic screen, to support staying on that screen while iteratively adjusting the bed plate screws, when leveling silicone spacers using the bed mesh.
+    None
 
 Bugfixes:
 
-    None
+    - Right-justified the Gcode Z Offset display fields, to fix Issue
 
 Known Issues at this release:
 
