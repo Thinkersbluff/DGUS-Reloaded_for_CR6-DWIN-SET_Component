@@ -7,7 +7,7 @@ New Features:
 
 Bugfixes:
 
-    - Right-justified the Gcode Z Offset display fields, to fix Issue
+    - Right-justified the Gcode Z Offset display fields, to fix Issue#27
 
 Known Issues at this release:
 
