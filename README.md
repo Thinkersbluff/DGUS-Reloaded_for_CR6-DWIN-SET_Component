@@ -33,6 +33,11 @@ Features present in this version of the UI include:
 * Display name of file currently being printed
 * Display elapsed time since starting current print
 
+NEW at v0.3.8:
+* Reprint last job
+* Enable|Disable Runout Sensor
+* Printer halts and prompts for filament, if Runout Sensor is Enabled AND Filament is not detected
+  
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
@@ -45,7 +50,7 @@ Testing is done on the following machine:
     - a direct drive Orbiter v1.5 extruder with Moons pancake motor
     - a Dragon HF hotend
     - a 0.9 deg Y axis motor
-    - a PEI flexible magnetic sheet
+    - a PEI flexible magnetic sheet print bed
 
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
