@@ -1,6 +1,6 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-![image](https://user-images.githubusercontent.com/36551518/212971698-2d6c0c36-32ec-4d9f-aa5d-3232401490b2.png)
+![IMG_20230814_143210](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/6a54daa7-3d1a-4ce1-9d03-0e88fbbb41b5)
 ![image](https://user-images.githubusercontent.com/36551518/212972182-ae2ac437-5109-46d0-84c9-205b93728757.png)
 ![Leveling](https://user-images.githubusercontent.com/36551518/212973797-90dc72f5-55bc-4af7-a1ff-85717db1998c.png)
 ![ALeveling](https://user-images.githubusercontent.com/36551518/212974618-f33749a1-f7f4-46d1-890c-aced45110d1e.png)
