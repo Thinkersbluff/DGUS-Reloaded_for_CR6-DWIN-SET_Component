@@ -1,9 +1,9 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-![IMG_20230814_143210](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/6a54daa7-3d1a-4ce1-9d03-0e88fbbb41b5)
-![image](https://user-images.githubusercontent.com/36551518/212972182-ae2ac437-5109-46d0-84c9-205b93728757.png)
-![Leveling](https://user-images.githubusercontent.com/36551518/212973797-90dc72f5-55bc-4af7-a1ff-85717db1998c.png)
-![ALeveling](https://user-images.githubusercontent.com/36551518/212974618-f33749a1-f7f4-46d1-890c-aced45110d1e.png)
+![IMG_20230819_002128](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/9714de9b-2ee4-4b11-be5d-81520f2a8ed4)
+![IMG_20230819_002145](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/d9f62392-a0d2-4a34-b358-a3599917a2b1)
+![IMG_20230819_002216](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/5986b74d-d3bd-4c3b-a88d-c4f10d22d50f)
+![IMG_20230819_002152](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/cc4d7ca8-75f4-48ba-9874-3b7877deb9a9)
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
@@ -37,6 +37,12 @@ NEW at v0.3.8:
 * Reprint last job
 * Enable|Disable Runout Sensor
 * Printer halts and prompts for filament, if Runout Sensor is Enabled AND Filament is not detected
+
+NEW at v0.3.9:
+* New Z Offset calibration screen
+* LOAD|REMOVE default Bed Mesh profile feature added to the ABL screen. Also supports viewing other profiles, if loaded via CONSOLE
+* Enhanced Manual Leveling screen - also supports ABL users with ability to test/measure gaps at each corner + in center of bed
+* Able to see status of - and Enable|Disable - the Runout sensor while printing or paused.  
   
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
