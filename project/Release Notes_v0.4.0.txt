@@ -5,6 +5,8 @@ New at release 0.4.0 - Beta:
 New Features:
 
     - Replaced the data entry number pad with the larger and more colourful one from CF6.1
+    - Replaced the popup messages for confirming PAUSE, STOP and RESUME with the larger more colourful ones from CF6.1 
+    - Now restore the runout sensor to the last selected state, in START_PRINT and at RESTART|FIRMWARE_RESTART
 
 Bugfixes:
 
