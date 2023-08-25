@@ -1,16 +1,16 @@
 Last updated: 19 Aug 2023
 
-New at release 0.3.9.1 - Beta:
+New at release 0.4.0 - Beta:
 
 New Features:
 
-    - None
+    - Replaced the data entry number pad with the larger and more colourful one from CF6.1
+    - Replaced the popup messages for confirming PAUSE, STOP and RESUME with the larger more colourful ones from CF6.1 
+    - Now restore the runout sensor to the last selected state, in START_PRINT and at RESTART|FIRMWARE_RESTART
 
 Bugfixes:
 
-	- Fixed: PAUSED Tune and Stop buttons not working correctly (Issue#32)
-	- Fixed: Brightness controls on SetUp menu are not working (Issue#33)
-	- Fixed: Return from Automatic Bed Leveling screen should be to Leveling Menu (Issue#34)
+
 	
 
 Known Issues at this release:
@@ -23,15 +23,7 @@ Known Issues at this release:
  - The logic intended to ensure that "time spent paused" is not included in the "total print duration" does not seem to be working. Further analysis of the code is required, to find the error(s).
 
 	No work around.
-
-  - If PAUSE or STOP is pressed while the printer is waiting for a heater to achieve a temperature target, the printer may show the print paused screen, and may park the head, but not actually be paused... In such cases, when the target is achieved, the toolhead may move back to continue the print, with the screen still showing Print Paused. While parked, in that case, trying to change filament will instead result only in a "Busy..." message.
-
-     Work around is either:
-	- Avoid using PAUSE or STOP until after the printer completes printing the purge line
-OR	- Upgrade the Klipper Component to v1.2.8
  
-
-
 CAUTION:
 
  - The FONT (.HZK) file changed at release v0.3.3.
