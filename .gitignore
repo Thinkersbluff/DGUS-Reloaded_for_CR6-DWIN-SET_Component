@@ -1,6 +1,5 @@
 project/ICON
 project/image
-
 project/*.xls
-
-project/DWIN_SET/*.bin
+project/*.zip
+project/DWIN_SET_v0.3.4.zip
