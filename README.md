@@ -43,7 +43,12 @@ NEW at v0.3.9:
 * LOAD|REMOVE default Bed Mesh profile feature added to the ABL screen. Also supports viewing other profiles, if loaded via CONSOLE
 * Enhanced Manual Leveling screen - also supports ABL users with ability to test/measure gaps at each corner + in center of bed
 * Able to see status of - and Enable|Disable - the Runout sensor while printing or paused.  
-  
+
+NEW at v0.4.1:
+* Added displays of Print Time Remaining and Print Time Elapsed
+* Moved Gcode Offset to the Tune screens only added LED On/Off to the Print Status and Print Paused screens
+* Added more controls to the Print Finished screen, to support post-print workflows
+    
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
