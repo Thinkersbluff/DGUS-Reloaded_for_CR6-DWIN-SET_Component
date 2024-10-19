@@ -60,7 +60,6 @@ Testing is done on the following machine:
     - a Creality ERA 1.1.0.3 motherboard
     - a direct drive Orbiter v1.5 extruder with Moons pancake motor
     - a Dragon HF hotend
-    - a 0.9 deg Y axis motor
     - a PEI flexible magnetic sheet print bed
 
 ## Prerequisites
