@@ -49,6 +49,10 @@ NEW at v0.4.1:
 * Moved Gcode Offset to the Tune screens only added LED On/Off to the Print Status and Print Paused screens
 * Added more controls to the Print Finished screen, to support post-print workflows
     
+NEW at v0.4.2:
+* Replaces Repeat Last Print functionality with a full scroll/select/print capability for all .gcode files on the Virtual SD Card.
+* Removed from beta and released as STABLE.
+* 
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
