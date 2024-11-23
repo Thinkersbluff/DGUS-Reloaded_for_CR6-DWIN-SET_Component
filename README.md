@@ -52,7 +52,12 @@ NEW at v0.4.1:
 NEW at v0.4.2:
 * Replaces Repeat Last Print functionality with a full scroll/select/print capability for all .gcode files on the Virtual SD Card.
 * Removed from beta and released as STABLE.
-* 
+
+NEW at v0.4.3
+* Adds a Delete File function to the Print_Menu page. 
+  * Includes an "Are you sure?" popup to Confirm/Cancel each request
+  * Shrinks the Refresh button to make space for the new button on the page
+
 >> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
