@@ -1,9 +1,10 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-![IMG_20230819_002128](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/9714de9b-2ee4-4b11-be5d-81520f2a8ed4)
-![IMG_20230819_002145](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/d9f62392-a0d2-4a34-b358-a3599917a2b1)
-![IMG_20230819_002216](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/5986b74d-d3bd-4c3b-a88d-c4f10d22d50f)
-![IMG_20230819_002152](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-DWIN-SET_Component/assets/36551518/cc4d7ca8-75f4-48ba-9874-3b7877deb9a9)
+<img src="https://github.com/user-attachments/assets/fa6bc728-eb41-48ae-b1c7-de7878859dbb" alt="Home Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/3a303b58-273e-4780-bbd0-9f3743f01026" alt="ABL Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/78ae9113-2cee-409c-9be8-f6cd8a4e5df0" alt="Change Filament Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/40c1e416-c654-4c1e-a515-7bdb79ab9b6a" alt="Print Menu Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/a1c58c88-d9fa-495b-ac4f-879d8d30f462" alt="Print Status Screen" width="180" height="320">
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
