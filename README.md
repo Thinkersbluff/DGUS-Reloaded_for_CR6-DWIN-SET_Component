@@ -1,8 +1,12 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
 <img src="https://github.com/user-attachments/assets/fa6bc728-eb41-48ae-b1c7-de7878859dbb" alt="Home Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/6b18f104-7bdf-492c-8975-a885a7761071" alt="ZOffset Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/3a303b58-273e-4780-bbd0-9f3743f01026" alt="ABL Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/1a2df1ad-7fd8-4d04-8f1c-f8648cd6a2e3" alt="PID Tuning Screen" width="180" height="320">
+
 <img src="https://github.com/user-attachments/assets/78ae9113-2cee-409c-9be8-f6cd8a4e5df0" alt="Change Filament Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/3cb87043-a336-48d8-89c0-f32ac613a1b6" alt="Delete File Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/40c1e416-c654-4c1e-a515-7bdb79ab9b6a" alt="Print Menu Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/a1c58c88-d9fa-495b-ac4f-879d8d30f462" alt="Print Status Screen" width="180" height="320">
 
