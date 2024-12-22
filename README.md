@@ -63,7 +63,12 @@ NEW at v0.4.3
   * Includes an "Are you sure?" popup to Confirm/Cancel each request
   * Shrinks the Refresh button to make space for the new button on the page
 
->> **CAUTION:** The automatic bed-leveling function provided with this version of the firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
+NEW at v0.4.4
+* Modifies the Information page to display the current version of the DGUS-Reloaded Klipper component
+* Adds an information icon to the Home page, to help users discover and access the Information page
+* Corrects a compilation error which may have prevented switching to the Please wait... page, when Homing in version 0.4.3.
+
+>> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
@@ -89,7 +94,7 @@ For this DWIN_SET to work with your printer, you must also:
      
      **NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
 - Ensure that the START_PRINT macro includes the command "DGUS_PRINT_START" and that the END_PRINT macro includes the command "DGUS_PRINT_END", per the examples in the CR6.cfg file provided.  
-- Modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the [Cura example provided with the Klipper component](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-Klipper_Component/blob/DGUS-ReloadedForCR6/Related%20Changes/Add%20these%20Cura%20Post-Processing%20Scripts.bmp)) 
+- Modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the [guidelines provided with the Klipper component](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-Klipper_Component#slicer-specific-configuration-guidelines)) 
 
 
 ## How to Customize the UI Look and Feel
