@@ -1,6 +1,6 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-<img src="https://github.com/user-attachments/assets/fa6bc728-eb41-48ae-b1c7-de7878859dbb" alt="Home Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/2dca455c-71c4-4d99-bb60-37a9075b19ce" alt="Home Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/6b18f104-7bdf-492c-8975-a885a7761071" alt="ZOffset Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/3a303b58-273e-4780-bbd0-9f3743f01026" alt="ABL Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1a2df1ad-7fd8-4d04-8f1c-f8648cd6a2e3" alt="PID Tuning Screen" width="180" height="320">
