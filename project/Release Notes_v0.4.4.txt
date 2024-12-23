@@ -1,25 +1,19 @@
-Last updated: 16 Nov 2024
+Last updated: 22 Dec 2024
 
-New at release 0.4.2 - Stable:
+New at release 0.4.4 - Stable:
 
 New Features:
 
-    - Added a scrollable list of the files on the Virtual SD Card, on the Print_Menu screen, 
-    from which the user can select and print any .gcode file on their card.
+    - Added an information icon to the Home screen, from which to access the Information page.
+    - Modified the Information page to remove two unused items, to display the full Klipper version number, and to display the currently installed t5uid version number (first implemented at v1.3.5 of the Klipper component.)
 
-
-    CAUTION: The filelist will include all .gcode files found in subfolders, and it will automatically sort the entire list
-    in descending order of Date Last Modified.  It will NOT, however, display the subfolder names. 
-    * This design is an advantage for folks like me who like to use long filenames
-    * It will disadvantage users who prefer instead to use subfolders to separate multiple variants of a .gcode file.
 
 Bugfixes:
 
-    - Issue #8 was fixed in the DGUS-Reloaded.cfg file for 1.1.0.3 and 4.5.3 Creality motherboards.  
-      * That fix is moot, since, the Repeat Last Print scripts are no longer used to control printing at this release
-      * I have left it there as an example, in case anyone wishes to experiment with modifications to the new functionality, to restore the display of subfolder names
-
-	Known Issues at this release:
+    -  Corrected a compilation error which prevented displaying the Please Wait... screen when Homing.
+	(Recompiled 32_Screens.icl, with 90% compression of images instead of 100%.)
+	
+Known Issues at this release: (No change since v0.4.3)
 
  - If your Virtual SD Card contains any files which do NOT end in .gcode, the filelist should exclude that file.
   * If, however, while scrolling through the list, your system suddenly shuts down - check for any such files in ~/printer_data/gcodes. 
