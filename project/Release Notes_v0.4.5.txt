@@ -1,17 +1,17 @@
-Last updated: 22 Dec 2024
+Last updated: 3 Jan 2025
 
-New at release 0.4.4 - Stable:
+New at release 0.4.5 - Stable:
 
 New Features:
 
-    - Added an information icon to the Home screen, from which to access the Information page.
-    - Modified the Information page to remove two unused items, to display the full Klipper version number, and to display the currently installed t5uid version number (first implemented at v1.3.5 of the Klipper component.)
+    - Minor cosmetic changes:
+	- Replaced text on some screens with edits in Photoshop Elements
+	- Renamed "Print Time Remaining" to "Slicer-Estimated Print Time Remaining"
 
 
 Bugfixes:
 
-    -  Corrected a compilation error which prevented displaying the Please Wait... screen when Homing.
-	(Recompiled 32_Screens.icl, with 90% compression of images instead of 100%.)
+    -  None
 	
 Known Issues at this release: (No change since v0.4.3)
 
