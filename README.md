@@ -68,6 +68,11 @@ NEW at v0.4.4
 * Adds an information icon to the Home page, to help users discover and access the Information page
 * Corrects a compilation error which may have prevented switching to the Please wait... page, when Homing in version 0.4.3.
 
+NEW at v0.4.5
+* Adds Firmware Retraction controls to the Prepare and Printing Tune pages
+* Adds Material Presets editing capability to the SetUp page
+* Modifies the Automatic Bed Leveling page layout and brightens the mesh values display
+
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
