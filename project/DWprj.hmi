@@ -27,6 +27,7 @@ ProVersion=641
 18=018_settings_menu2.bmp
 19=019_pid.bmp
 20=020_information.bmp
+21=021_set_firmware_retraction.bmp
 202=202_popup_numpad.bmp
 203=203_popup_numpad_sel.bmp
 204=204_popup_abort.bmp
