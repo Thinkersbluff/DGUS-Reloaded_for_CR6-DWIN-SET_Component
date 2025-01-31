@@ -1,8 +1,23 @@
-Last updated: 3 Jan 2025
+Last updated: 6 Jan 2025
 
 New at release 0.4.5 - Stable:
 
 New Features:
+
+    - Implemented support for Firmware Retraction
+	- New menu page to display/edit the current settings
+	- Added access to this new page from the Prepare menu
+
+    - Added "Material Presets" function to the Setup menu
+       - New presets.cfg file contains default names, nozzle temps and bed temps, for up to 3 types of filaments
+       - New Setup functionality allows modification of the default temperatures from the Setup page
+       - presets.cfg provides persistence of the material presets
+       - Able to edit the filament type names in preset.cfg, using a text editor (up to 4 characters per name)
+
+    - Modified the Manage Heaters and Change Filament pages to replace the Material Preset selection button/popup menu with three buttons whose labels are automatically populated from presets.cfg
+
+    - Simplified some menus
+	- Removed some controls
 
     - Minor cosmetic changes:
 	- Replaced text on some screens with edits in Photoshop Elements
