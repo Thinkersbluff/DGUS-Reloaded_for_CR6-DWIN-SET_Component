@@ -98,7 +98,7 @@ NEW at v0.4.6
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 Coming Soon:
-* Extruder Calibration function (similar to the e-steps calibration function in the Marlin-based CR6Community Firmware)
+* Extruder rotation distance calibration aid (similar to e-steps calibration on Marlin CF6.1, but Klipper does not support automating the update, at the final step.)
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
@@ -113,22 +113,14 @@ Testing is done on the following machine:
 
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
-- install this [customized version of Klipper, per the installation guidelines](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
-- Flash the applicable pre-compiled Klipper.bin file provided for you in the other repo.
-- Configure printer.cfg to:
-  1. define the bed mesh as 5x5  
-  2. add a section [t5uid1] with at least the line "firmware: dgus_reloaded", like this:
- 
-     [t5uid1]  
-     firmware: dgus_reloaded
-     
-     **NOTE:** For a complete list of all available options in the [t5uid1] section, see the [sample-t5uid1.cfg](https://github.com/Desuuuu/klipper/blob/master/config/sample-t5uid1.cfg) file.
-- Ensure that the START_PRINT macro includes the command "DGUS_PRINT_START" and that the END_PRINT macro includes the command "DGUS_PRINT_END", per the examples in the CR6.cfg file provided.  
-- Modify the slicer settings to add M117 messaging and to add layer number and file name to the gcode. (See the [guidelines provided with the Klipper component](https://github.com/Thinkersbluff/DGUS-Reloaded_for_CR6-Klipper_Component#slicer-specific-configuration-guidelines)) 
+- Install the latest version of MainsailOS
+- Tailor your Klipper installation, MainsailOS configuration and Cura
+- Flash the applicable pre-compiled Klipper.bin file provided for you in the other repo. 
 
+[All of the instructions for achieving the above are provided with the matching Klipper component release, here.](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
 
 ## How to Customize the UI Look and Feel
-You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  Two versions of that tool, documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
+You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  The tool, developer's documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
 
 You can edit the graphics using a simple bitmap editing tool, like Windows PAINT.
 
