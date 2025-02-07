@@ -1,8 +1,26 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-<img src="https://github.com/user-attachments/assets/bd558039-6adc-4223-a1a7-f82a2d4f3871" alt="Home Screen" width="180" height="320">
+
+## PLEASE NOTE:
+The goal of this project is to breathe new life into the CR6 stock TFT display, which would otherwise no longer function once Klipper is installed on your printer.
+Installing just this firmware onto your display is NOT enough.  The activation and integration of this UI into your printer system relies totally upon you to also:  
+    1. Install Mainsail on a host processor (e.g. Raspberry pi or Linux PC)  
+    2. Flash the pre-compiled Klipper.bin file to your printer's motherboard (NB: There may come a day when a Klipper update is incompatible with that pre-compiled .bin file. That day may mark the "end of the road" for this project.)  
+    3. Install the t5uid1 python application into the ~klipper/klippy/extras folder on your Klipper host processor  
+    4. Install the Stable_Z_Home "plug-in" from  [https://github.com/matthewlloyd/Klipper-Stable-Z-Home](https://github.com/matthewlloyd/Klipper-Stable-Z-Home)  
+    5. Install and tailoring the Mainsail .cfg files provided in the Related Changes folder of the linked repository  
+    6. Tailor your slicer (instructions are only provided for Cura and OrcaSlicer) to include M73 messages in the gcode files  
+
+I have configured my own CR6-SE printer with KlipperScreen on a 7" tablet at the printer and Mainsail on a laptop beside the printer, but there are still some operations for which I prefer to use my stock display with this firmware.  
+
+I am maintaining these two repositories in the hope that some of you will also enjoy some features of both this DWIN_SET application and my customizations of Klipper.  
+I recommend that you start with installing and configuring MainsailOS and Klipper on your printer, and then return to flash your stock display if you - like I - enjoy some of these features.  
+
+To help tease you into trying this firmware, here is a sampling of some of the screens I use most often:  
+
+<img src="https://github.com/user-attachments/assets/79b7453d-3fb3-4901-b0d6-d4bcf7758d82" alt="Home Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/6b18f104-7bdf-492c-8975-a885a7761071" alt="ZOffset Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/8f058b3d-4a0a-4c5d-b825-0e167c32e92f" alt="ABL Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/c6550ada-fdc4-4077-8f4c-10b3181b8d9c" alt="ABL Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1a2df1ad-7fd8-4d04-8f1c-f8648cd6a2e3" alt="PID Tuning Screen" width="180" height="320">
 
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
@@ -15,7 +33,6 @@ This DWIN touchscreen firmware is designed and compiled to run on the portrait-m
 Initially refactored and extended from the T5UID1 DGUS-reloaded firmware by Desuuuu which is available from [this repository](https://github.com/Desuuuu/DGUS-reloaded-Klipper).  
 
 At release 0.3, completely refactored again, to closely resemble the [CF6.1 Community Firmware](https://github.com/CR6Community/CR-6-touchscreen) in look, feel, terminology, and workflow logic.
-
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -73,10 +90,14 @@ NEW at v0.4.5
 * Adds Material Presets editing capability to the SetUp page
 * Modifies the Automatic Bed Leveling page layout and brightens the mesh values display
 
+NEW at v0.4.6
+* Overhauls the Automatic Bed Leveling function, to support all of the user's bed_mesh profiles, not just "default"
+* Adds colour-coding of the displayed bed_mesh points, with a user-specifiable threshold for what min/max values are low enough to code as "green".
+      (Defaults to +/- 0.100mm, per the Mainsail HeightMap default settings. Which is also 10 times the probing consistency threshold configured for Safe-Z-Home.)
+
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 Coming Soon:
-* Colour-coded bed mesh display, with user-definable threshold of how flat you consider to be "green".
 * Extruder rotation distance calibration aid (similar to e-steps calibration on Marlin CF6.1, but Klipper does not support automating the update, at the final step.)
 
 ## Compatibility
