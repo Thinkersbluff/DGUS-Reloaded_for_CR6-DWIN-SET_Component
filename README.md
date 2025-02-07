@@ -1,8 +1,8 @@
 
 # DGUS-reloaded (for Klipper) DWIN_SET, CR6Community Edition
-<img src="https://github.com/user-attachments/assets/bd558039-6adc-4223-a1a7-f82a2d4f3871" alt="Home Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/79b7453d-3fb3-4901-b0d6-d4bcf7758d82" alt="Home Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/6b18f104-7bdf-492c-8975-a885a7761071" alt="ZOffset Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/8f058b3d-4a0a-4c5d-b825-0e167c32e92f" alt="ABL Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/c6550ada-fdc4-4077-8f4c-10b3181b8d9c" alt="ABL Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1a2df1ad-7fd8-4d04-8f1c-f8648cd6a2e3" alt="PID Tuning Screen" width="180" height="320">
 
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
@@ -73,7 +73,15 @@ NEW at v0.4.5
 * Adds Material Presets editing capability to the SetUp page
 * Modifies the Automatic Bed Leveling page layout and brightens the mesh values display
 
+NEW at v0.4.6
+* Overhauls the Automatic Bed Leveling function, to support all of the user's bed_mesh profiles, not just "default"
+* Adds colour-coding of the displayed bed_mesh points, with a user-specifiable threshold for what min/max values are low enough to code as "green".
+      (Defaults to +/- 0.100mm, per the Mainsail HeightMap default settings. Which is also 10 times the probing consistency threshold configured for Safe-Z-Home.)
+
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
+
+Coming Soon:
+* Extruder Calibration function (similar to the e-steps calibration function in the Marlin-based CR6Community Firmware)
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
