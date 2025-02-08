@@ -8,7 +8,7 @@ Installing just this firmware onto your display is NOT enough.  The activation a
     2. Flash the pre-compiled Klipper.bin file to your printer's motherboard (NB: There may come a day when a Klipper update is incompatible with that pre-compiled .bin file. That day may mark the "end of the road" for this project.)  
     3. Install the t5uid1 python application into the ~klipper/klippy/extras folder on your Klipper host processor  
     4. Install the Stable_Z_Home "plug-in" from  [https://github.com/matthewlloyd/Klipper-Stable-Z-Home](https://github.com/matthewlloyd/Klipper-Stable-Z-Home)  
-    5. Install and tailoring the Mainsail .cfg files provided in the Related Changes folder of the linked repository  
+    5. Install and tailor the Mainsail .cfg files provided in the Related Changes folder of the linked repository  
     6. Tailor your slicer (instructions are only provided for Cura and OrcaSlicer) to include M73 messages in the gcode files  
 
 I have configured my own CR6-SE printer with KlipperScreen on a 7" tablet at the printer and Mainsail on a laptop beside the printer, but there are still some operations for which I prefer to use my stock display with this firmware.  
