@@ -26,7 +26,8 @@ To help tease you into trying this firmware, here is a sampling of some of the s
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/3cb87043-a336-48d8-89c0-f32ac613a1b6" alt="Delete File Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/40c1e416-c654-4c1e-a515-7bdb79ab9b6a" alt="Print Menu Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/a1c58c88-d9fa-495b-ac4f-879d8d30f462" alt="Print Status Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/1914bae2-530c-4f68-b5c1-ce0846d0ffaf" alt="Print Status Screen" width="180" height="320">
+
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
