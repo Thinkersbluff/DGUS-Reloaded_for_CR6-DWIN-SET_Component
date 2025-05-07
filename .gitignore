@@ -4,3 +4,4 @@ project/*.xls
 project/*.zip
 project/TFT/*.tft
 *.tft
+project/TFT/coords_13.json
