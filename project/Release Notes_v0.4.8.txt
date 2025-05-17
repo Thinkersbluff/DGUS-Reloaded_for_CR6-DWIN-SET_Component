@@ -1,27 +1,19 @@
-Last updated: 6 May 2025
+Last updated: 16 May 2025
 
-New at release 0.4.7 - Stable:
+New at release 0.4.8 - Stable:
 
 New Features:
 
- - Added new control to SetUp, Print Status, Print Paused and Print Finished screens, to toggle whether the END_PRINT macro will or will not automatically unload the filament at the end of the print.  Thanks to jensweimann for the suggestion, sample code and design collaboration!
-
-
- - Started the design of a new Extruder Calibration function.
-   - New sample screens included in DWIN_SET folder, but access/functionality not yet implemented in UI
-   - Prioritized this release to correct the memory space conflict.
-   - Rest of this function will follow in the next release.
-
+ - 
 
 Bugs fixed at this release:
 
-    -  Issue #57 Issue with calibration page where some buttons do nothing and others crash klipper
-
-    -  Re-mapped the assigned memory locations for the four user-definable parameters on the Firmware Retraction screen, to remove a memory space conflict
-
+- Baseline DGUS project was somehow damaged during the release of v0.4.7
+- Used v0.4.5 as source of all screens from 021 to 250, which were lost from the baseline.
+- Restored the baseline files so that I could develop v0.4.8
 	
 Known Issues at this release: 
- - New:  Issue #56 Current (Bed_Mesh) Profile name displayed = 'None', if no such mesh stored in printer.cfg (e.g. fresh after a new installation)
+ - Issue #56 Current (Bed_Mesh) Profile name displayed = 'None', if no such mesh stored in printer.cfg (e.g. fresh after a new installation)
    - See issue for work-around
 
  - No change since v0.4.3:
