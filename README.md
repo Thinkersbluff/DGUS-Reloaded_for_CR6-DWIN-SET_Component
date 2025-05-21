@@ -96,10 +96,13 @@ NEW at v0.4.6
 * Adds colour-coding of the displayed bed_mesh points, with a user-specifiable threshold for what min/max values are low enough to code as "green".
       (Defaults to +/- 0.100mm, per the Mainsail HeightMap default settings. Which is also 10 times the probing consistency threshold configured for Safe-Z-Home.)
 
->> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
+NEW at v0.4.7
+*  Adds option for configuring the printer to automatically unload the filament at the end of the current print
 
-Coming Soon:
-* Extruder rotation distance calibration aid (similar to e-steps calibration on Marlin CF6.1, but Klipper does not support automating the update, at the final step.)
+NEW at v0.4.8
+* Adds a Calibrate Extruder Rotation_Distance function (2 new screens)
+
+>> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
