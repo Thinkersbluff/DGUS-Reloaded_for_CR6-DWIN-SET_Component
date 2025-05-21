@@ -1,18 +1,20 @@
-Last updated: 16 May 2025
+Last updated: 19 May 2025
 
 New at release 0.4.8 - Stable:
 
 New Features:
 
- - 
+ - Adds two new screens for a Calibrate Extruder Rotation Distance function
+ - Adds new button to Calibrate Menu, to access the Calibrate Extruder Rotation Distance screen 1 of 2
 
 Bugs fixed at this release:
 
-- Baseline DGUS project was somehow damaged during the release of v0.4.7
-- Used v0.4.5 as source of all screens from 021 to 250, which were lost from the baseline.
-- Restored the baseline files so that I could develop v0.4.8
+- Some DGUS project files were damaged during the release of v0.4.7, preventing further development
+- Used v0.4.5 as a source of all of the screens from 021 to 250, which were lost from the baseline
+- Restored the 0.4.7 baseline files to enable development of v0.4.8 and subs
 	
 Known Issues at this release: 
+
  - Issue #56 Current (Bed_Mesh) Profile name displayed = 'None', if no such mesh stored in printer.cfg (e.g. fresh after a new installation)
    - See issue for work-around
 
