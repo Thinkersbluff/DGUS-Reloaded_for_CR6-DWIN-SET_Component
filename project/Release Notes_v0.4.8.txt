@@ -6,12 +6,15 @@ New Features:
 
  - Adds two new screens for a Calibrate Extruder Rotation Distance function
  - Adds new button to Calibrate Menu, to access the Calibrate Extruder Rotation Distance screen 1 of 2
+ - Moves the Reset Firmware button on the Automatic Leveling page, slightly, and adds text to clarify that it is an alternative to Save_Config
+ - Adds a delayed action attribute to that same button, requiring user to press and hold the button for ~1 sec, to command the reset
 
 Bugs fixed at this release:
 
 - Some DGUS project files were damaged during the release of v0.4.7, preventing further development
 - Used v0.4.5 as a source of all of the screens from 021 to 250, which were lost from the baseline
 - Restored the 0.4.7 baseline files to enable development of v0.4.8 and subs
+- Found and fixed a bug (Issue#62) introduced by the DGUSTool at v0.4.7/0.4.8.  LOAD Profile button had a 0.8sec delay programmed into it, somehow.  Simply removed it
 	
 Known Issues at this release: 
 
@@ -27,7 +30,7 @@ Known Issues at this release:
     Deleting those files should fix the problem.
 
    - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.
-      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable" Klipper seems to need to initialize those remote controls while being reset...)
+      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable". Klipper seems to need to initialize those remote controls while being reset...)
     	There is no work-around for this issue.
 
  
