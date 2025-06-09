@@ -102,6 +102,9 @@ NEW at v0.4.7
 NEW at v0.4.8
 * Adds a Calibrate Extruder Rotation_Distance function (2 new screens)
 
+NEW at v0.4.9
+* Adds a Custom Macros capability, with a user-definable set of menus accessed through a new button on the top bar of selected menus.
+
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 
 ## Compatibility
