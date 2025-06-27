@@ -18,16 +18,16 @@ I recommend that you start with installing and configuring MainsailOS and Klippe
 
 To help tease you into trying this firmware, here is a sampling of some of the screens I use most often:  
 
-<img src="https://github.com/user-attachments/assets/79b7453d-3fb3-4901-b0d6-d4bcf7758d82" alt="Home Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/144ecea5-29f6-4cd5-9fdc-55c23dc6611a" alt="Home Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/6b18f104-7bdf-492c-8975-a885a7761071" alt="ZOffset Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/c6550ada-fdc4-4077-8f4c-10b3181b8d9c" alt="ABL Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1a2df1ad-7fd8-4d04-8f1c-f8648cd6a2e3" alt="PID Tuning Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/3270ed36-0c93-4227-9662-c32ef38e7aac" alt="Rotation Distance Screen" width="180" height="320">
 
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/3cb87043-a336-48d8-89c0-f32ac613a1b6" alt="Delete File Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/40c1e416-c654-4c1e-a515-7bdb79ab9b6a" alt="Print Menu Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/9dc4ecbf-6bb6-4718-8aa1-79065447c1cf" alt="Print Menu Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/230409ca-0283-4bb7-9a21-47ee9d57f15e" alt="Print Macros Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1914bae2-530c-4f68-b5c1-ce0846d0ffaf" alt="Print Status Screen" width="180" height="320">
-
 
 This DWIN touchscreen firmware is designed and compiled to run on the portrait-mode T5L 272x480 pixel DWIN displays provided stock with Creality CR6-SE and CR6-MAX FDM printers.
 
