@@ -1,6 +1,6 @@
 Last updated: 1 July 2025
 
-New at release 0.5.0 - Stable:
+New at release 0.5.1 - Stable:
 
 New Features:
 
@@ -8,13 +8,10 @@ New Features:
 
 Bugs fixed at this release:
 
-- None
+- #65 - FIRMWARE_RESTART button on ShutDown (Kill) screen is not working
+      - Not sure why, but flashing the previous T5L...cfg file has restored function to this control
 	
 Known Issues at this release:
-
- - No change since v0.4.9:
-
-   - #65 - FIRMWARE_RESTART button on ShutDown (Kill) screen is not working
 
  - No change since v0.4.3:
 
