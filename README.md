@@ -25,7 +25,7 @@ To help tease you into trying this firmware, here is a sampling of some of the s
 <img src="https://github.com/user-attachments/assets/3270ed36-0c93-4227-9662-c32ef38e7aac" alt="Rotation Distance Screen" width="180" height="320">
 
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/960f000e-a3e8-4e73-b617-1be17a34bae1" alt="Print Menu Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/a1f64ce0-485f-48dc-b046-e60dfdd36155" alt="Print Menu Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/230409ca-0283-4bb7-9a21-47ee9d57f15e" alt="Print Macros Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1914bae2-530c-4f68-b5c1-ce0846d0ffaf" alt="Print Status Screen" width="180" height="320">
 
@@ -105,7 +105,13 @@ NEW at v0.4.8
 NEW at v0.4.9
 * Adds a Custom Macros capability, with a user-definable set of menus accessed through a new button on the top bar of selected menus.
 
+NEW at v0.5.0
+* Converts the Print Menu screen to look and operate in the same way as the Macros screen
+* Re-factors the Macro screen function to cache the lists from DGUS_Macro_Menus.cfg into a dictionary, for speed
+
+****************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
+****************************************************************************************************
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
