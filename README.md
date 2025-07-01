@@ -25,7 +25,7 @@ To help tease you into trying this firmware, here is a sampling of some of the s
 <img src="https://github.com/user-attachments/assets/3270ed36-0c93-4227-9662-c32ef38e7aac" alt="Rotation Distance Screen" width="180" height="320">
 
 <img src="https://github.com/user-attachments/assets/1d66360d-592c-44f6-9bf9-efef93a1ee99" alt="Change Filament Screen" width="180" height="320">
-<img src="https://github.com/user-attachments/assets/a1f64ce0-485f-48dc-b046-e60dfdd36155" alt="Print Menu Screen" width="180" height="320">
+<img src="https://github.com/user-attachments/assets/db0d69ef-4aed-4c9e-a14e-5bc9a6552759" alt="Print Menu Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/230409ca-0283-4bb7-9a21-47ee9d57f15e" alt="Print Macros Screen" width="180" height="320">
 <img src="https://github.com/user-attachments/assets/1914bae2-530c-4f68-b5c1-ce0846d0ffaf" alt="Print Status Screen" width="180" height="320">
 
