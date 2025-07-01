@@ -109,6 +109,10 @@ NEW at v0.5.0
 * Converts the Print Menu screen to look and operate in the same way as the Macros screen
 * Re-factors the Macro screen function to cache the lists from DGUS_Macro_Menus.cfg into a dictionary, for speed
 
+NEW at v0.5.1
+* Reverts the touchscreen to "beep on touch" behaviour and removes the debouncing delays from controls
+* Makes the UI much more responsive, but some controls may be overly sensitive and trigger multiple times on a single activation.
+
 ****************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 ****************************************************************************************************
