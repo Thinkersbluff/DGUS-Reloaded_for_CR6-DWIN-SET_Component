@@ -1,15 +1,17 @@
-Last updated: 1 July 2025
+Last updated: 2 July 2025
 
-New at release 0.5.1 - Stable:
+New at release 0.5.2 - Stable:
 
 New Features:
 
- - Converts the Print Menu screen to implement the same look and operation as introduced with the Macro screen at 0.4.9.
+ - Bug Fixes
 
 Bugs fixed at this release:
 
-- #65 - FIRMWARE_RESTART button on ShutDown (Kill) screen is not working
-      - Not sure why, but flashing the previous T5L...cfg file has restored function to this control
+- #71 - Axis movement controls on the MOVE page are often unresponsive
+  - Removed activation delays inadvertently left on the controls
+- #70 - Can not select Bed for PID
+  - Removed activation delays inadvertently left on the controls
 	
 Known Issues at this release:
 
