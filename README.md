@@ -113,6 +113,9 @@ NEW at v0.5.1
 * Reverts the touchscreen to "beep on touch" behaviour and removes the debouncing delays from controls
 * Makes the UI much more responsive, but some controls may be overly sensitive and trigger multiple times on a single activation.
 
+NEW at v0.5.2
+* Fixes issues #70 and #71
+
 ****************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 ****************************************************************************************************
