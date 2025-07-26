@@ -1,6 +1,6 @@
-Last updated: 2 July 2025
+Last updated: 6 July 2025
 
-New at release 0.5.2 - Stable:
+New at release 0.5.2.1 - Stable:
 
 New Features:
 
@@ -12,6 +12,7 @@ Bugs fixed at this release:
   - Removed activation delays inadvertently left on the controls
 - #70 - Can not select Bed for PID
   - Removed activation delays inadvertently left on the controls
+- #80 - Change Filament Temperature Preset buttons are not responsive
 	
 Known Issues at this release:
 
