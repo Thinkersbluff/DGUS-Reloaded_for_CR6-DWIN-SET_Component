@@ -1,18 +1,15 @@
-Last updated: 6 July 2025
+Last updated: 27 July 2025
 
-New at release 0.5.2.1 - Stable:
+New at release 0.5.3 - Stable:
 
 New Features:
-
- - Bug Fixes
+ - Bug fixes
 
 Bugs fixed at this release:
 
-- #71 - Axis movement controls on the MOVE page are often unresponsive
-  - Removed activation delays inadvertently left on the controls
-- #70 - Can not select Bed for PID
-  - Removed activation delays inadvertently left on the controls
-- #80 - Change Filament Temperature Preset buttons are not responsive
+- current and new extruder rotation distance calculations and float conversions produced 3rd decimal place round-off errors.  The updated value in printer.cfg was not limited to 3 decimal places.  Both of these issues have been resolved.
+- "nudging" the amount extruded sometimes only affected the 2nd decimal place, but only the first decimal place was shown.  That parameter is now consistently stepped +/-0.1mm per nudge.
+- New memory space audit scripts exposed several memory conflicts and a few unused variables in the cfg files.  These have been fixed.
 	
 Known Issues at this release:
 
