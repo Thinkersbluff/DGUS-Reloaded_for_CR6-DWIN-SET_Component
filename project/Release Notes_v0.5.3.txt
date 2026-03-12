@@ -1,17 +1,16 @@
-Last updated: 2 July 2025
+Last updated: 12 March 2026
 
-New at release 0.5.2 - Stable:
+New at release 0.5.3 - Stable:
 
 New Features:
-
- - Bug Fixes
+ - Bug fixes
 
 Bugs fixed at this release:
-
-- #71 - Axis movement controls on the MOVE page are often unresponsive
-  - Removed activation delays inadvertently left on the controls
-- #70 - Can not select Bed for PID
-  - Removed activation delays inadvertently left on the controls
+ 
+#79: - Added new screens to confirm when FIRMWARE_RESTART and RESTART buttons have been pressed and process is underway.
+#80  - Removed activation delays from preheat buttons on Control Heaters page.
+#87: - Removed activation delays from preheat buttons on Manage Heaters page.
+#84: - Corrected memory allocation error, to restore Enable/Disable control over the Auto Unload After Printing. 
 	
 Known Issues at this release:
 
