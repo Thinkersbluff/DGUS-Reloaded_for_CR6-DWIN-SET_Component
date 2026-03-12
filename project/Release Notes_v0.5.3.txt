@@ -1,4 +1,4 @@
-Last updated: 27 July 2025
+Last updated: 12 March 2026
 
 New at release 0.5.3 - Stable:
 
@@ -6,10 +6,11 @@ New Features:
  - Bug fixes
 
 Bugs fixed at this release:
-
-- current and new extruder rotation distance calculations and float conversions produced 3rd decimal place round-off errors.  The updated value in printer.cfg was not limited to 3 decimal places.  Both of these issues have been resolved.
-- "nudging" the amount extruded sometimes only affected the 2nd decimal place, but only the first decimal place was shown.  That parameter is now consistently stepped +/-0.1mm per nudge.
-- New memory space audit scripts exposed several memory conflicts and a few unused variables in the cfg files.  These have been fixed.
+ 
+#79: - Added new screens to confirm when FIRMWARE_RESTART and RESTART buttons have been pressed and process is underway.
+#80  - Removed activation delays from preheat buttons on Control Heaters page.
+#87: - Removed activation delays from preheat buttons on Manage Heaters page.
+#84: - Corrected memory allocation error, to restore Enable/Disable control over the Auto Unload After Printing. 
 	
 Known Issues at this release:
 
