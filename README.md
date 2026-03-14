@@ -5,7 +5,7 @@
 The goal of this project is to breathe new life into the CR6 stock TFT display, which would otherwise no longer function once Klipper is installed on your printer.
 Installing just this firmware onto your display is NOT enough.  The activation and integration of this UI into your printer system relies totally upon you to also:  
     1. Install Mainsail on a host processor (e.g. Raspberry pi or Linux PC)  
-    2. Flash the pre-compiled Klipper.bin file to your printer's motherboard (NB: There may come a day when a Klipper update is incompatible with that pre-compiled .bin file. That day may mark the "end of the road" for this project.)  
+    2. Flash the pre-compiled Klipper.bin file to your printer's motherboard.   
     3. Install the t5uid1 python application into the ~klipper/klippy/extras folder on your Klipper host processor  
     4. Install the Stable_Z_Home "plug-in" from  [https://github.com/matthewlloyd/Klipper-Stable-Z-Home](https://github.com/matthewlloyd/Klipper-Stable-Z-Home)  
     5. Install and tailor the Mainsail .cfg files provided in the Related Changes folder of the linked repository  
@@ -116,6 +116,10 @@ NEW at v0.5.1
 NEW at v0.5.2
 * Fixes issues #70 and #71
 
+NEW at v1.0.0
+* Fixes issues 79, 80, 84, 87
+* Changes include memory addresses, breaking backward-compatibility and warranting a MAJOR version bump
+
 ****************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 ****************************************************************************************************
@@ -126,10 +130,13 @@ This firmware **should** be compatible with any configuration of CR6-SE or CR6-M
 Testing is done on the following machine:
 
 * Creality CR6-SE, modified with:
-    - a Creality ERA 1.1.0.3 motherboard
+    - a BTT SKR CR6 v1.0 motherboard
     - a direct drive Orbiter v1.5 extruder with Moons pancake motor
     - a Dragon HF hotend
+    - 0.9 deg Y-Axis motor
     - a PEI flexible magnetic sheet print bed
+    - bed converted to use linear rails
+    - BTT SFS 1.0 filament motion sensor
 
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
