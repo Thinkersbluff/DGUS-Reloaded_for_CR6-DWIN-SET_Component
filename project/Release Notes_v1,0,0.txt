@@ -1,6 +1,6 @@
-Last updated: 12 March 2026
+Last updated: 13 March 2026
 
-New at release 0.5.3 - Stable:
+New at release 1.0.0 - Stable:
 
 New Features:
  - Bug fixes
