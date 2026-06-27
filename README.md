@@ -4,7 +4,7 @@
 ## PLEASE NOTE:
 The goal of this project is to breathe new life into the CR6 stock TFT display, which would otherwise no longer function once Klipper is installed on your printer.
 Installing just this firmware onto your display is NOT enough.  The activation and integration of this UI into your printer system relies totally upon you to also:  
-    1. Install Mainsail on a host processor (e.g. Raspberry pi or Linux PC)  
+    1. Install the latest Klipper + Mainsail on a host processor (e.g. Raspberry pi or Linux PC)  
     2. Flash the pre-compiled Klipper.bin file to your printer's motherboard.   
     3. Install the t5uid1 python application into the ~klipper/klippy/extras folder on your Klipper host processor  
     4. Install the Stable_Z_Home "plug-in" from  [https://github.com/matthewlloyd/Klipper-Stable-Z-Home](https://github.com/matthewlloyd/Klipper-Stable-Z-Home)  
