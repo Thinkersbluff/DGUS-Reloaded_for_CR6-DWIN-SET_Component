@@ -10,10 +10,10 @@ New Features:
    DGUS-Reloaded then uses that information + your presets, to enforce the filament-appropriate values of min-extrude temperature and default PID temperatures
 
 Bugs fixed at this release:
-#97 - Change Filament LOAD/UNLOAD does not consider current Heater Target value
-#98 - Calibration Extruder Rotation Distance function is not working correctly
+97 - Change Filament LOAD/UNLOAD does not consider current Heater Target value
+98 - Calibration Extruder Rotation Distance function is not working correctly
 100 - The Change FIlament "Homing..." WAIT screen is not persisting until the function is complete
-
+101 - Release 2.0.2 is incomplete - the Pull Request intended to push those changes was never merged.
 
 Known Issues at this release:
 
