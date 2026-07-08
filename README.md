@@ -120,7 +120,12 @@ NEW at v1.0.0
 * Fixes issues 79, 80, 84, 87
 * Changes include memory addresses, breaking backward-compatibility and warranting a MAJOR version bump
 
-****************************************************************************************************
+NEW at v2.0.3
+* Changes the version numbering to make it more intuitive for users to ensure they have paired DWIN_SET to the matching Klipper back-end
+* Adds support for defining the min-extrude temperature and default extruder/bed temperatures by selecting the installed filament type
+  (Note: the tradeoff for this decision is that now I need to release a new version of the UI with every back-end release, even if the front end was not changed except to bump the version#)
+
+****************************************************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
 ****************************************************************************************************
 
