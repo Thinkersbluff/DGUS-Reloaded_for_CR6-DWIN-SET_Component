@@ -1,17 +1,20 @@
-Last updated: 13 March 2026
+Last updated: 7 July 2026
 
-New at release 1.0.0 - Stable:
+New at release 2.0.3 - Stable:
 
 New Features:
  - Bug fixes
+ - Changed the versioning of the DWIN Component to match the Klipper Component version #.
+ - Paired with the Klipper Component, this version now restores UI functionality which was disabled by Klipper3D updates which eliminated a variable that helped persist displays until all pending moves were completed.
+ - Added the ability to "tell" DGU-Reloaded which type of filament you have installed.
+   DGUS-Reloaded then uses that information + your presets, to enforce the filament-appropriate values of min-extrude temperature and default PID temperatures
 
 Bugs fixed at this release:
- 
-#79: - Added new screens to confirm when FIRMWARE_RESTART and RESTART buttons have been pressed and process is underway.
-#80  - Removed activation delays from preheat buttons on Control Heaters page.
-#87: - Removed activation delays from preheat buttons on Manage Heaters page.
-#84: - Corrected memory allocation error, to restore Enable/Disable control over the Auto Unload After Printing. 
-	
+#97 - Change Filament LOAD/UNLOAD does not consider current Heater Target value
+#98 - Calibration Extruder Rotation Distance function is not working correctly
+100 - The Change FIlament "Homing..." WAIT screen is not persisting until the function is complete
+
+
 Known Issues at this release:
 
  - No change since v0.4.3:
@@ -23,8 +26,8 @@ Known Issues at this release:
     Deleting those files should fix the problem.
 
    - The RESET and FIRMWARE RESET buttons on the splash screen do not work on power-up.
-      They do work after a FIRMWARE RESET from the Mainsail Web client. (NOTE: This may not be "fixable". Klipper seems to need to initialize those remote controls while being reset...)
-    	There is no work-around for this issue.
+      They do work after a FIRMWARE RESET from the Mainsail Web client. 
+     If, however, you install the local pi scripts bundled with the Klipper Component, you can configure your system to automatically restart Klipper when you power-cycle your printer, so this UI limitation no longer affects you.
 
  
 CAUTION:
