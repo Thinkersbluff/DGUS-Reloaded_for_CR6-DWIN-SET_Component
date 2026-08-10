@@ -139,9 +139,13 @@ Testing is done on the following machine:
     - a direct drive Orbiter v1.5 extruder with Moons pancake motor
     - a Dragon HF hotend
     - 0.9 deg Y-Axis motor
+    - 0.9 deg X-Axis motor 
     - a PEI flexible magnetic sheet print bed
+    - silicone spacers under the bed, replacing the stock plastic standoffs
+    - gantry braces
     - bed converted to use linear rails
     - BTT SFS 1.0 filament motion sensor
+    - Bambu nozzle cleaning brush mounted to the bed
 
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
