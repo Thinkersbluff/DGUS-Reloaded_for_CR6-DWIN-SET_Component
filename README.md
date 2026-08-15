@@ -39,91 +39,30 @@ At release 0.3, completely refactored again, to closely resemble the [CF6.1 Comm
 **This software is provided without any warranty. You are solely responsible for your use of it.**
 
 ## Features
-This firmware was inspired by the CR6Community Firmware touchscreen firmware, but it is NOT as feature-rich as the CR6Community Firmware. 
+This firmware was inspired by the CR6Community Firmware touchscreen firmware, but it is NOT a feature-for-feature duplicate of that interface. 
 
-Features present in this version of the UI include:
+Features present in version 2.0.3 of the UI include:
 * Support for _most_ workflows best performed standing at the printer 
 * Emergency Stop (M112) button on every screen
 * Ability to Tune some printer settings during a print
 * PID autotuning for both Nozzle and for Bed, with SAVE_CONFIG option
-* Pre-defined Material heat settings for PLA, PETG and ABS
+* User-specifiable Material heat settings for up to three filaments (e.g: PLA, PETG and ABS)
 * Screen Display Brightness adjustment
-* Pause/Resume/Cancel print controls 
-* Support for M73 message display during printing
+* Pause/Resume/Cancel print controls
+* Display elapsed time since starting current print
+* Support for M73 message (% complete, time remaining) display during printing
 * SET_GCODE_OFFSET Z for current print session
 * Support for manual leveling, for those who have retrofit bed wheels
-* Run ABL with option to SAVE_CONFIG (default) Profile
-* Display name of file currently being printed
-* Display elapsed time since starting current print
-
-NEW at v0.3.8:
-* Reprint last job
+* Run 5x5 ABL with option to SAVE_CONFIG (default) Profile
+* Full scroll/select/print capability for all .gcode files on the Virtual SD Card.
+* Displays name of file currently being printed
 * Enable|Disable Runout Sensor
+* Enable|Disable Automatic Unload of filament at print completion
 * Printer halts and prompts for filament, if Runout Sensor is Enabled AND Filament is not detected
-
-NEW at v0.3.9:
-* New Z Offset calibration screen
-* LOAD|REMOVE default Bed Mesh profile feature added to the ABL screen. Also supports viewing other profiles, if loaded via CONSOLE
-* Enhanced Manual Leveling screen - also supports ABL users with ability to test/measure gaps at each corner + in center of bed
-* Able to see status of - and Enable|Disable - the Runout sensor while printing or paused.  
-
-NEW at v0.4.1:
-* Added displays of Print Time Remaining and Print Time Elapsed
-* Moved Gcode Offset to the Tune screens only added LED On/Off to the Print Status and Print Paused screens
-* Added more controls to the Print Finished screen, to support post-print workflows
-    
-NEW at v0.4.2:
-* Replaces Repeat Last Print functionality with a full scroll/select/print capability for all .gcode files on the Virtual SD Card.
-* Removed from beta and released as STABLE.
-
-NEW at v0.4.3
-* Adds a Delete File function to the Print_Menu page. 
-  * Includes an "Are you sure?" popup to Confirm/Cancel each request
-  * Shrinks the Refresh button to make space for the new button on the page
-
-NEW at v0.4.4
-* Modifies the Information page to display the current version of the DGUS-Reloaded Klipper component
-* Adds an information icon to the Home page, to help users discover and access the Information page
-* Corrects a compilation error which may have prevented switching to the Please wait... page, when Homing in version 0.4.3.
-
-NEW at v0.4.5
-* Adds Firmware Retraction controls to the Prepare and Printing Tune pages
-* Adds Material Presets editing capability to the SetUp page
-* Modifies the Automatic Bed Leveling page layout and brightens the mesh values display
-
-NEW at v0.4.6
-* Overhauls the Automatic Bed Leveling function, to support all of the user's bed_mesh profiles, not just "default"
-* Adds colour-coding of the displayed bed_mesh points, with a user-specifiable threshold for what min/max values are low enough to code as "green".
-      (Defaults to +/- 0.100mm, per the Mainsail HeightMap default settings. Which is also 10 times the probing consistency threshold configured for Safe-Z-Home.)
-
-NEW at v0.4.7
-*  Adds option for configuring the printer to automatically unload the filament at the end of the current print
-
-NEW at v0.4.8
-* Adds a Calibrate Extruder Rotation_Distance function (2 new screens)
-
-NEW at v0.4.9
-* Adds a Custom Macros capability, with a user-definable set of menus accessed through a new button on the top bar of selected menus.
-
-NEW at v0.5.0
-* Converts the Print Menu screen to look and operate in the same way as the Macros screen
-* Re-factors the Macro screen function to cache the lists from DGUS_Macro_Menus.cfg into a dictionary, for speed
-
-NEW at v0.5.1
-* Reverts the touchscreen to "beep on touch" behaviour and removes the debouncing delays from controls
-* Makes the UI much more responsive, but some controls may be overly sensitive and trigger multiple times on a single activation.
-
-NEW at v0.5.2
-* Fixes issues #70 and #71
-
-NEW at v1.0.0
-* Fixes issues 79, 80, 84, 87
-* Changes include memory addresses, breaking backward-compatibility and warranting a MAJOR version bump
-
-NEW at v2.0.3
-* Changes the version numbering to make it more intuitive for users to ensure they have paired DWIN_SET to the matching Klipper back-end
-* Adds support for defining the min-extrude temperature and default extruder/bed temperatures by selecting the installed filament type
-  (Note: the tradeoff for this decision is that now I need to release a new version of the UI with every back-end release, even if the front end was not changed except to bump the version#)
+* Z Offset calibration screen
+* Custom Macros capability, with a user-definable set of menus accessed through a button on the top bar of selected menus.
+* Supports Firmware Retraction
+* Colour-codes the displayed bed_mesh points, with a user-specifiable threshold for what min/max values are low enough to code as "green". * User can Calibrate Extruder Rotation_Distance (Klipper equivalent to Marlin's e-steps)
 
 ****************************************************************************************************************************************
 >> **CAUTION:** The automatic bed-leveling function provided with this firmware ONLY works correctly if you also configure your printer.cfg to perform a 5x5 bed mesh.  If you do not want to use a 5x5 mesh, do not use this ABL function.
@@ -131,6 +70,7 @@ NEW at v2.0.3
 
 ## Compatibility
 This firmware **should** be compatible with any configuration of CR6-SE or CR6-MAX printer, regardless of whether that machine is fully stock or substantially modified. (It even includes a manual leveling screen, for those of you who have installed manual bed-leveling wheels.)
+Some configuration differences between the developer's modified SE and your printer require you to tailor the Klipper configuration files for your printer (guidance is included as comments in those files)
 
 Testing is done on the following machine:
 
@@ -150,10 +90,11 @@ Testing is done on the following machine:
 ## Prerequisites
 For this DWIN_SET to work with your printer, you must also:
 - Install the latest version of MainsailOS
-- Tailor your Klipper installation, MainsailOS configuration and Cura
-- Flash the applicable pre-compiled Klipper.bin file provided for you in the other repo. 
+- Tailor your Klipper installation, MainsailOS configuration and slicer
+- Flash the applicable pre-compiled Klipper.bin file provided for you in the Klipper Component repo.
+- Install Pi-Side scripts and other 3rd-party helpers (e.g. gcode_shell_command.py and Stable_Z_Home), per the Installation Manual in the Klipper Component repo.
 
-[All of the instructions for achieving the above are provided with the matching Klipper component release, here.](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
+[All of the instructions for achieving the above are provided as Installation Documentation, with the matching Klipper component release, here.](https://github.com/Thinkersbluff/dgus-reloaded_klipper)
 
 ## How to Customize the UI Look and Feel
 You can make modifications to the DWIN_SET firmware by opening the `DWprj.hmi` file in **DGUS Tools**.  The tool, developer's documents and Tutorial URLs have been added to the repository at this release, to help anyone who would like to learn how this is done.
